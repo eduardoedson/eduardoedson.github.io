@@ -34,7 +34,7 @@ $(document).ready(function() {
                 "sSortDescending": ": Ordenar colunas de forma descendente"
             }
         }
-    );
+    });
 });
 
 $('#TableName').DataTable({
