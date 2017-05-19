@@ -1,216 +1,138 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
     <head>
-        <title>CSS Registration Form</title>
+        <title>(Cadastro) PP - Prontuário Popular</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <link rel="stylesheet" type="text/css" href="css/cadastro.css"/>
     </head>
     <body>
-        <form action="" class="register">
-            <h1>Registration</h1>
+        <form action="idnex.html" method="get" class="register">
             <fieldset class="row1">
-                <legend>Account Details
-                </legend>
+                <legend>Dados da Conta</legend>
                 <p>
-                    <label>Email *
-                    </label>
-                    <input type="text"/>
-                    <label>Repeat email *
-                    </label>
-                    <input type="text"/>
+                    <label>Email</label><input type="text" required/>
+                    <label>Confirmar Email</label><input type="text" required/>
                 </p>
                 <p>
-                    <label>Password*
-                    </label>
-                    <input type="text"/>
-                    <label>Repeat Password*
-                    </label>
-                    <input type="text"/>
-                    <label class="obinfo">* obligatory fields
-                    </label>
+                    <label>Senha</label><input type="password" required/>
+                    <label>Confirmar Senha</label><input type="password" required/>
                 </p>
             </fieldset>
             <fieldset class="row2">
-                <legend>Personal Details
-                </legend>
+                <legend>Dados Pessoais</legend>
+                <p><label>Nome</label><input type="text" class="long" required/></p>
+                <p><label>CPF</label><input type="text" class="long" required/></p>
+                <p><label>RG</label><input type="text" class="long" required/></p>
+                <p><label>Endereço</label><input type="text" class="long"/></p>
+                <p><label>Cidade</label><input type="text" class="long"/></p>
+                <p><label>Telefone</label><input type="text" maxlength="10" required/></p>
+                <p><label>Celular</label><input type="text" maxlength="10" required/></p>
                 <p>
-                    <label>Name *
-                    </label>
-                    <input type="text" class="long"/>
-                </p>
-                <p>
-                    <label>Phone *
-                    </label>
-                    <input type="text" maxlength="10"/>
-                </p>
-                <p>
-                    <label class="optional">Street
-                    </label>
-                    <input type="text" class="long"/>
-                </p>
-                <p>
-                    <label>City *
-                    </label>
-                    <input type="text" class="long"/>
-                </p>
-                <p>
-                    <label>Country *
-                    </label>
-                    <select>
-                        <option>
-                        </option>
-                        <option value="1">United States
-                        </option>
+                    <label>Estado</label>
+                    <select required>
+                        <option>[Selecione]</option>
+                        <option>Acre</option>
+                        <option>Alagoas</option>
+                        <option>Amazonas</option>
+                        <option>Amapá</option>
+                        <option>Bahia</option>
+                        <option>Ceará</option>
+                        <option>Distrito Federal</option>
+                        <option>Espiríto Santo</option>
+                        <option>Goiás</option>
+                        <option>Maranhã</option>
+                        <option>Mato Grosso</option>
+                        <option>Mato Grosso do Sul</option>
+                        <option>Minhas Gerais</option>
+                        <option>Pará</option>
+                        <option>Paraíba</option>
+                        <option>Paraná</option>
+                        <option>Pernambuco</option>
+                        <option>Piauí</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Rio Grande do Norte</option>
+                        <option>Rondônia</option>
+                        <option>Rio Grande do Sul</option>
+                        <option>Roraima</option>
+                        <option>Santa Catarina</option>
+                        <option>Sergipe</option>
+                        <option>São Paulo</option>
+                        <option>Tocantins</option>
                     </select>
                 </p>
                 <p>
-                    <label class="optional">Website
-                    </label>
-                    <input class="long" type="text" value="http://"/>
-
+                    <label>Sexo</label>
+                    <select required>
+                      <<option>[Selecione]</option>
+                      <<option>Masculino</option>
+                      <<option>Feminino</option>
+                      <<option>Outro</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Data de Nascimento</label>
+                    <select class="date" required>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <select required>
+                        <option value="1">Janeiro</option>
+                        <option value="2">Fevereiro</option>
+                        <option value="3">Março</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Maio</option>
+                        <option value="6">Junho</option>
+                        <option value="7">Julho</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                    </select>
+                    <input class="year" type="text" size="4" maxlength="4" required/>
                 </p>
             </fieldset>
             <fieldset class="row3">
-                <legend>Further Information
-                </legend>
-                <p>
-                    <label>Gender *</label>
-                    <input type="radio" value="radio"/>
-                    <label class="gender">Male</label>
-                    <input type="radio" value="radio"/>
-                    <label class="gender">Female</label>
-                </p>
-                <p>
-                    <label>Birthdate *
-                    </label>
-                    <select class="date">
-                        <option value="1">01
-                        </option>
-                        <option value="2">02
-                        </option>
-                        <option value="3">03
-                        </option>
-                        <option value="4">04
-                        </option>
-                        <option value="5">05
-                        </option>
-                        <option value="6">06
-                        </option>
-                        <option value="7">07
-                        </option>
-                        <option value="8">08
-                        </option>
-                        <option value="9">09
-                        </option>
-                        <option value="10">10
-                        </option>
-                        <option value="11">11
-                        </option>
-                        <option value="12">12
-                        </option>
-                        <option value="13">13
-                        </option>
-                        <option value="14">14
-                        </option>
-                        <option value="15">15
-                        </option>
-                        <option value="16">16
-                        </option>
-                        <option value="17">17
-                        </option>
-                        <option value="18">18
-                        </option>
-                        <option value="19">19
-                        </option>
-                        <option value="20">20
-                        </option>
-                        <option value="21">21
-                        </option>
-                        <option value="22">22
-                        </option>
-                        <option value="23">23
-                        </option>
-                        <option value="24">24
-                        </option>
-                        <option value="25">25
-                        </option>
-                        <option value="26">26
-                        </option>
-                        <option value="27">27
-                        </option>
-                        <option value="28">28
-                        </option>
-                        <option value="29">29
-                        </option>
-                        <option value="30">30
-                        </option>
-                        <option value="31">31
-                        </option>
-                    </select>
-                    <select>
-                        <option value="1">January
-                        </option>
-                        <option value="2">February
-                        </option>
-                        <option value="3">March
-                        </option>
-                        <option value="4">April
-                        </option>
-                        <option value="5">May
-                        </option>
-                        <option value="6">June
-                        </option>
-                        <option value="7">July
-                        </option>
-                        <option value="8">August
-                        </option>
-                        <option value="9">September
-                        </option>
-                        <option value="10">October
-                        </option>
-                        <option value="11">November
-                        </option>
-                        <option value="12">December
-                        </option>
-                    </select>
-                    <input class="year" type="text" size="4" maxlength="4"/>e.g 1976
-                </p>
-                <p>
-                    <label>Nationality *
-                    </label>
-                    <select>
-                        <option value="0">
-                        </option>
-                        <option value="1">United States
-                        </option>
-                    </select>
-                </p>
-                <p>
-                    <label>Children *
-                    </label>
-                    <input type="checkbox" value="" />
-                </p>
-                <div class="infobox"><h4>Helpful Information</h4>
-                    <p>Here comes some explaining text, sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                </div>
+                <legend>Contato Familiar</legend>
+                <p><label>Nome do Contato</label><input type="text" class="long"/></p>
+                <p><label>Grau de Parentesco</label><input type="text" class="long"/></p>
+                <p><label>Telefone do Contato</label><input type="text" class="long"/></p>
             </fieldset>
-            <fieldset class="row4">
-                <legend>Terms and Mailing
-                </legend>
-                <p class="agreement">
-                    <input type="checkbox" value=""/>
-                    <label>*  I accept the <a href="#">Terms and Conditions</a></label>
-                </p>
-                <p class="agreement">
-                    <input type="checkbox" value=""/>
-                    <label>I want to receive personalized offers by your site</label>
-                </p>
-                <p class="agreement">
-                    <input type="checkbox" value=""/>
-                    <label>Allow partners to send me personalized offers and related services</label>
-                </p>
-            </fieldset>
-            <div><button class="button">Register &raquo;</button></div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div><button class="button">Cadastrar</button></div>
         </form>
     </body>
 </html>
