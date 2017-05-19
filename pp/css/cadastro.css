@@ -187,7 +187,7 @@ form.register input[type=password]
     cursor: pointer;
     float:right;
     font-size:18px;
-    margin:80px;
+    margin:20px;
 }
 form.register input[type=text].year
 {
