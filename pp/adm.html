@@ -19,13 +19,6 @@
     <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/sb-admin.css" rel="stylesheet">
-
-    <style>
-      th {
-        width: 15%;
-      }
-    </style>
-
 </head>
 
 <body>
@@ -67,48 +60,76 @@
                 <li class="breadcrumb-item"><a href="dash.html"> PP</a></li>
                 <li class="breadcrumb-item active"> Administrador</li>
             </ol>
-
-            <a class="btn btn-outline-warning btn-lg" href="editar_perfil.html" role="button" style="float: right;">Editar Perfil</a>
             <br /><br /><br /><br />
             <div class="card mb-3">
                 <div class="card-block">
                     <div class="table-responsive">
-                          <fieldset>
-                            <legend>Dados da Conta</legend>
-                            <table class="table table-bordered" width="100%" cellspacing="0">
-                              <tr><th>Email: </th><td>eduardo@gmail.com</td></tr>
-                            </table>
-                          </fieldset>
-
-                          <fieldset>
-                            <legend>Dados Pessoais</legend>
-                            <table class="table table-bordered" width="100%" cellspacing="0">
-                              <tr><th>Nome: </th><td>Eduardo</td></tr>
-                              <tr><th>CPF: </th><td>341.373.614-01</td></tr>
-                              <tr><th>RG: </th><td>2.995.448</td></tr>
-                              <tr><th>Endereço: </th><td>QS 07 - Lote 01</td></tr>
-                              <tr><th>Cidade: </th><td>Brasília</td></tr>
-                              <tr><th>Estado: </th><td> Distrito Federal</td></tr>
-                              <tr><th>Telefone: </th><td>(61) 3555 - 2523</td></tr>
-                              <tr><th>Celular: </th><td>(61) 9 9900 - 0099</td></tr>
-                              <tr><th>Sexo: </th><td>Masculino</td></tr>
-                              <tr><th>Data de Nascimento: </th><td>23/12/1994</td></tr>
-                            </table>
-                          </fieldset>
-
-                          <fieldset>
-                            <legend>Filiação</legend>
-                            <table class="table table-bordered" width="100%" cellspacing="0">
-                              <tr><th>Nome do Pai: </th><td>Edson</td></tr>
-                              <tr><th>Nome da Mãe: </th><td>Maria José</td></tr>
-                            </table>
-                          </fieldset>
-                          <fieldset>
-                            <legend>Outros</legend>
-                            <table class="table table-bordered" width="100%" cellspacing="0">
-                              <tr><th>CRM:</th><td>-</td></tr>
-                            </table>
-                          </fieldset>
+                      <table class="table table-bordered" width="100%" id="dataTable" cellspacing="0">
+                          <thead>
+                              <tr>
+                                  <th>Email</th>
+                                  <th>ip</th>
+                                  <th>Data - Hora</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>carlosalberto@gmail.com</td>
+                                  <td>192.158.145.17</td>
+                                  <td>01/01/2001 - 13:21</td>
+                              </tr>
+                              <tr>
+                                  <td>josealencar@gmail.com</td>
+                                  <td>183.141.145.0</td>
+                                  <td>01/08/2011 - 19:21</td>
+                              </tr>
+                              <tr>
+                                  <td>josealencar@gmail.com</td>
+                                  <td>183.141.145.0</td>
+                                  <td>01/08/2011 - 19:21</td>
+                              </tr>
+                              <tr>
+                                  <td>amauri@gmail.com</td>
+                                  <td>100.50.15.0</td>
+                                  <td>12/10/2016 - 03:22</td>
+                              </tr>
+                              <tr>
+                                  <td>cesar@gmail.com</td>
+                                  <td>100.59.15.0</td>
+                                  <td>12/05/2013 - 04:25</td>
+                              </tr>
+                              <tr>
+                                  <td>luciana@gmail.com</td>
+                                  <td>120.79.15.0</td>
+                                  <td>19/05/2016 - 04:25</td>
+                              </tr>
+                              <tr>
+                                  <td>barbara@gmail.com</td>
+                                  <td>100.59.120.95</td>
+                                  <td>13/12/2015 - 15:25</td>
+                              </tr>
+                              <tr>
+                                  <td>carol@gmail.com</td>
+                                  <td>197.168.15.0</td>
+                                  <td>12/05/2017 - 14:49</td>
+                              </tr>
+                              <tr>
+                                  <td>marilia@gmail.com</td>
+                                  <td>100.59.15.123</td>
+                                  <td>13/02/2014 - 05:27</td>
+                              </tr>
+                              <tr>
+                                  <td>caio@gmail.com</td>
+                                  <td>100.79.15.11</td>
+                                  <td>15/05/2015 - 14:15</td>
+                              </tr>
+                              <tr>
+                                  <td>julio@gmail.com</td>
+                                  <td>100.95.0.0</td>
+                                  <td>15/03/2017 - 17:19</td>
+                              </tr>
+                          </tbody>
+                      </table>
                     </div>
                 </div>
             </div>
