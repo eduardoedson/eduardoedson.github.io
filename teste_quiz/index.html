@@ -1,8 +1,3 @@
-<?php
-    $array = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
-    $delicada = $array[rand(0, 9)];
-    $bruta = 100 - $delicada;
-?>
 <html xmlns="https://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -40,7 +35,10 @@
             }
             function resultado(){
 		$("load").hide();
-                document.getElementById("resultado").innerHTML = "<b>Você é uma pessoa <?= $delicada ?>% delicada e <?= $bruta ?>% bruta</b>";
+                var array = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+                var delicada = array[Math.floor(Math.random() * 10)];
+                var bruta = 100 - delicada;
+                document.getElementById("resultado").innerHTML = "<b>Você é uma pessoa " + delicada + "% delicada e " + bruta + "% bruta</b>";
             }
         </script>
     </body>
