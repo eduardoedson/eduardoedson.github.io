@@ -1,4 +1,4 @@
-var item = 2;
+var item = 0;
 
 function getPageId(n) {
 	return 'article-page-' + n;
@@ -76,7 +76,7 @@ function fetchPage(page) {
 }
 
 function addPage(page) {
-	if(item > 0){
+	if(item >= 0){
 		fetchPage(page);
 		addPaginationPage(page);
 	}
