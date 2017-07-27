@@ -35,7 +35,20 @@
       Cras lacus augue, luctus at sem non, posuere laoreet dolor. Morbi eu vehicula risus, varius porttitor dolor. Vivamus semper lacus eget ex vestibulum interdum ac vitae orci. Cras vel mollis libero. Nulla pulvinar justo porta lectus lacinia consequat sit amet et odio. Pellentesque massa mauris, facilisis nec elit ut, fermentum mollis risus. Morbi quis lacus neque. Nam ac diam sed neque scelerisque consectetur tristique nec massa. Aenean volutpat neque a ante aliquet, ut commodo lorem porttitor. Suspendisse eget ultrices urna. Vestibulum ultricies diam ac mauris egestas, a feugiat ligula tempor. Sed quam tellus, accumsan non scelerisque a, dictum id neque.
       </div>
       <div class="article-list" id="article-list">
-        <p>Curtir</p>
+        <div class="article-list" id="article-list">
+          <br /><br /><br />
+          <!-- BOTÃO CURTIR FACEBOOK -->
+          <div id="fb-root"></div>
+          <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+          <div class="fb-like" data-href="https://www.facebook.com/CoolTestes.tk" data-width="650" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+          <br /><br /><br />
+        </div>
       </div>
 
       <ul class="article-list__pagination article-list__pagination--inactive" id="article-list-pagination"></ul>

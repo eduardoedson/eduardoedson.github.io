@@ -24,7 +24,17 @@
     <main>
       <h1>CoolTestes</h1>
       <div class="article-list" id="article-list">
-        <p>Curtir</p>
+        <!-- BOTÃO CURTIR FACEBOOK -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="fb-like" data-href="https://www.facebook.com/CoolTestes.tk" data-width="650" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+        <br /><br /><br />
       </div>
       <ul class="article-list__pagination article-list__pagination--inactive" id="article-list-pagination"></ul>
     </main>
