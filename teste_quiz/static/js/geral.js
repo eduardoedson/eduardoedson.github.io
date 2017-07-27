@@ -1,4 +1,5 @@
 function init_load(){
+  document.getElementById("imagem").style.visibility = 'hidden';
   document.getElementById("load").innerHTML = "<b>Por favor, aguarde...</b>";
   setTimeout(load2, 2000);
 }
