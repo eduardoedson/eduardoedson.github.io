@@ -1,3 +1,5 @@
+var item = 2;
+
 function getPageId(n) {
 	return 'article-page-' + n;
 }
@@ -17,15 +19,16 @@ function getScrollTop() {
 }
 
 function getArticleImage() {
-	const hash = Math.floor(Math.random() * Number.MAX_SAFE_INTEGER);
 	const image = new Image;
 	image.className = 'article-list__item__image article-list__item__image--loading';
-	image.src = 'http://api.adorable.io/avatars/250/' + hash;
-
+	image.src = './img/' + item + '.png';
+	image.onclick = function() {
+    window.location.href = 'http://google.com';
+	};
 	image.onload = function() {
 		image.classList.remove('article-list__item__image--loading');
 	};
-
+	item--;
 	return image;
 }
 
@@ -34,11 +37,15 @@ function getArticle() {
 	const article = document.createElement('article');
 	article.className = 'article-list__item';
 	article.appendChild(articleImage);
+	article.setAttribute('href', "http://google.com");
 
 	return article;
 }
 
 function getArticlePage(page, articlesPerPage = 20) {
+	if (articlesPerPage > item) {
+		articlesPerPage = item + 1;
+	}
 	const pageElement = document.createElement('div');
 	pageElement.id = getPageId(page);
 	pageElement.className = 'article-list__page';
@@ -71,8 +78,10 @@ function fetchPage(page) {
 }
 
 function addPage(page) {
-	fetchPage(page);
-	addPaginationPage(page);
+	if(item > 0){
+		fetchPage(page);
+		addPaginationPage(page);
+	}
 }
 
 const articleList = document.getElementById('article-list');

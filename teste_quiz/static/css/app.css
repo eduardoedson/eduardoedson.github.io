@@ -4,6 +4,7 @@ body {
   counter-reset: page;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: grayscale;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,7 +24,7 @@ a:active {
 
 main {
   margin: 0 auto;
-  max-width: 65em;
+  max-width: 80%;
   padding: 1em;
 }
 
@@ -50,7 +51,7 @@ main {
 .article-list__item {
   background-color: #eee;
   float: left;
-  height: 15em;
+  height: 25em;
   max-width: 50%;
   opacity: .75;
   -webkit-transform: scale(0.8);
@@ -59,7 +60,7 @@ main {
   transition: opacity 0.2s, -webkit-transform 0.2s;
   transition: opacity 0.2s, transform 0.2s;
   transition: opacity 0.2s, transform 0.2s, -webkit-transform 0.2s;
-  width: 15em;
+  width: 25em;
 }
 .article-list__item:hover {
   opacity: 1;
