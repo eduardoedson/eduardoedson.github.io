@@ -22,12 +22,11 @@ function getArticleImage() {
 	const image = new Image;
 	image.className = 'article-list__item__image article-list__item__image--loading';
 	image.src = './img/' + item + '.png';
-	image.onclick = function() {
-    window.location.href = 'http://google.com';
-	};
-	image.onload = function() {
-		image.classList.remove('article-list__item__image--loading');
-	};
+	var url = '';
+	url += ('', item);
+	url += '.html';
+	image.onclick = function() { window.location.href = url; };
+	image.onload = function() { image.classList.remove('article-list__item__image--loading'); };
 	item--;
 	return image;
 }
@@ -37,7 +36,6 @@ function getArticle() {
 	const article = document.createElement('article');
 	article.className = 'article-list__item';
 	article.appendChild(articleImage);
-	article.setAttribute('href', "http://google.com");
 
 	return article;
 }
