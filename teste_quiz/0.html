@@ -1,62 +1,89 @@
 <!DOCTYPE HTML>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="Os melhores testes para Facebook. Descubra coisas legais sobre você e seus amigos, é super Cool!"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <link rel="shortcut icon" href="fav.ico">
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./static/css/app.css">
+<html>
+	<head>
+		<title>Qual signo mais combina com você?</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" href="fav.ico">
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="./img/loads/load5.png" alt="" /></span><span class="title">Cool Testes</span>
+								</a>
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+						</div>
+					</header>
+				<!-- Menu -->
+					<nav id="menu">
+					  <h2>Menu</h2>
+					  <ul>
+					    <li><a href="index.html">Home</a></li>
+					    <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+					  </ul>
+					</nav>
 
-    <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+				<!-- Main -->
+					<div id="main">
+						<div class="inner" style="text-align:center; margin:auto;">
+							<h1>Qual signo mais combina com você?</h1>
+							<header><!-- PROPAGANDA --></header>
 
-    <meta property="og:url"           content="http://eduardoedson.github.io/teste_quiz/index.html" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Qual signo seria seu ideal para você?" />
-    <meta property="og:description"   content="Faça os testes e descubra coisas legais sobre você e seus amigos!" />
-    <meta property="og:image"         content="pic_2.jpg" />
-    <title>Cool Testes</title>
-  </head>
-  <body>
-    <main>
-      <h1><a href="./index.html"><img src="./img/logo.png" alt="Mountain View"></a></h1>
-      <div>
+							<canvas id="myCanvas" style="visibility:hidden;display:none;width:100%;height:100%;"></canvas>
+							<img src="./img/loads/init_load.png" alt="porquinho" id="porquinho" style="visibility:hidden;display:none;width:111px;height:96px;">
+							<div id="load"><span class="image main"><img src="img/0/init.png" alt="" id="imagem" /></span></div>
 
-      </div>
-      <div class="article-list" id="article-list">
-        <div class="article-list" id="article-list">
-         <br /><br /><br />
-          <!-- BOTÃO CURTIR FACEBOOK -->
-          <div id="fb-root"></div>
-          <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));</script>
-          <div class="fb-like" data-href="https://www.facebook.com/CoolTestes.tk" data-width="650" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
-          <br /><br /><br />
+							<ul class="actions">
+								<li><button type="button" class="button fit" onclick="init_load(); this.disabled=true;" id="botao_iniciar_teste">Iniciar Teste</button></li>
+							</ul>
+							<ul class="actions">
+								<li><button type="button" class="button fit" onclick="location.href='./0.html';" id="botao_refazer_teste" style="display:none;visibility:hidden;">Repetir Teste</button></li>
+								<li><button type="button" class="button fit" onclick="ShareTest()" id="botao_compartilhar" style="display:none;visibility:hidden;">Compartilhar</button></li>
+							</ul>
 
-          <div id="div_1">
-            <div id="load"><img src="./img/0.png" alt="Mountain View" id="imagem" style="width:450px;height:450px;"></div>
-            <br /><br />
-            <button type="button" class="btn btn-warning" onclick="init_load()" style="height:50px;width:450px">Iniciar Teste</button>
-          </div>
+							<header><!-- PROPAGANDA --></header>
 
-          <br /><br /><br />
-        </div>
-      </div>
+							<hr  />
+							<p>Experimente outros testes: </p>
+							<div w3-include-html="testes.html"></div>
+						</div>
+					</div>
+					<!-- Footer -->
+					<footer id="footer">
+					  <div class="inner">
+							<div w3-include-html="footer.html"></div>
+						</div>
+					</footer>
+				</div>
 
-      <ul class="article-list__pagination article-list__pagination--inactive" id="article-list-pagination"></ul>
-    </main>
+			</div>
 
-    <!-- JS -->
-    <script src="./static/js/app.js"></script>
-    <script src="./static/js/geral.js"></script>
-    <script src="./static/js/0.js"></script>
-  </body>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script>w3.includeHTML();</script>
+
+			<script src="./static/js/fb.js"></script>
+			<script src="./static/js/geral.js"></script>
+			<script src="./static/js/0.js"></script>
+	</body>
 </html>
