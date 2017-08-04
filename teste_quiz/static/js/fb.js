@@ -1,8 +1,26 @@
+var imagetoShow;
+var testtoShare
+
+function getResult(pos, testId){
+  imagetoShow = pos;
+  testtoShare = testId;
+}
+
+
 function ShareTest() {
   FB.ui(
    {
-    method: 'share',
-    href: 'https://www.facebook.com/Cool.Testes/'
+     method: 'share_open_graph',
+	   action_type: 'og.likes',
+	   action_properties: JSON.stringify({
+     object:{
+		 'og:url': 'https://eziofilho.github.io/new_layout/'+testtoShare+'.html',
+		 'og:title': 'Here my custom title',
+     'og:description': 'here custom description',
+		 'og:image': 'https://eziofilho.github.io/new_layout/img/'+testtoShare+'/'+imagetoShow+'.png'
+	}
+
+	})
    }, function(response){
 
     console.log(response);
