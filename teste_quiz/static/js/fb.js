@@ -1,23 +1,14 @@
-var imagetoShow;
-var testtoShare
-
-function getResult(pos, testId){
-  imagetoShow = pos;
-  testtoShare = testId;
-}
-
-
-function ShareTest() {
+function ShareTest(teste_id) {
   FB.ui(
    {
      method: 'share_open_graph',
 	   action_type: 'og.likes',
 	   action_properties: JSON.stringify({
      object:{
-		 'og:url': 'https://eziofilho.github.io/new_layout/'+testtoShare+'.html',
-		 'og:title': 'Here my custom title',
+		 'og:url': 'https://eduardoedson.github.io/teste_quiz/' + teste_id + '.html',
+		 'og:title': 'Teste',
      'og:description': 'here custom description',
-		 'og:image': 'https://eziofilho.github.io/new_layout/img/'+testtoShare+'/'+imagetoShow+'.png'
+		 'og:image': 'https://eduardoedson.github.io/teste_quiz/img/0.png';
 	}
 
 	})

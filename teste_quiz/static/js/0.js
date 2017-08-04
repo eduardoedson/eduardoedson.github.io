@@ -47,10 +47,6 @@ function ImageResult(res, pos){
     context.clip();
     context.drawImage(images.foto, 0, 0, 4*24+2, 4*24+2);
   });
-
-  console.log(canvas.toDataURL('image/jpeg', 1.0));
-  document.getElementById('share_image').src = canvas.toDataURL('image/jpeg', 1.0);
-  getResult(pos, '0');
 }
 
 function loadImages(sources, callback) {
