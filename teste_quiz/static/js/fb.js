@@ -2,7 +2,7 @@ function ShareTest(teste_id) {
   var data = document.getElementById('canvas').toDataURL("image/png");
 	var encodedPng = data.substring(data.indexOf(',') + 1, data.length);
 	var decodedPng = Base64Binary.decode(encodedPng);
-  console.log('Imagem: ', decodedPng);
+  console.log('Imagem === ', decodedPng);
 
   FB.ui(
    {
