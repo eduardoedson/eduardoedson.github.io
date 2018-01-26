@@ -1,289 +1,296 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-    <title>Eduardo Edson</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Eduardo Edson</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+  <script src="js/vendor/jquery.hashchange.min.js"></script>
+  <script src="js/vendor/jquery.easytabs.min.js"></script>
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+
+
+  <script src="js/main.js"></script>
+  <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+      <![endif]-->
 </head>
-
-<body>
-    <div class="wrapper">
-        <div class="sidebar-wrapper">
-          <div class="profile-container">
-                <img class="profile" src="assets/images/edu.png" alt="" />
-                <h1 class="name">Eduardo Edson</h1>
-                <h3 class="tagline">Desenvolvedor</h3>
-            </div><!--//profile-container-->
-
-            <div class="contact-container container-block">
-                <ul class="list-unstyled contact-list">
-                    <li class="email"><i class="fa fa-envelope"></i>edu-23@hotmail.com</li>
-                    <li class="phone"><i class="fa fa-phone"></i>(61) 3257-1604<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(61) 9 9801-8395</li>
-                    <li class="github"><i class="fa fa-github"></i><a href="https://github.com/eduardoedson" target="_blank">eduardoedson</a></li>
-                    <li class="facebook"><i class="fa fa-facebook"></i><a href="https://www.facebook.com/eduardo.alves.23" target="_blank">Eduardo Alves</a></li>
-					<li class="facebook"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/eduardo-edson-147339136" target="_blank">Eduardo Alves</a></li>
-                    <li class="facebook"><i class="fa fa-download"></i><a href="/down/CV Eduardo Edson Batista Cordeiro Alves.pdf" target="_blank">Versão .PDF</a></li>
-                </ul>
-            </div><!--//contact-container-->
-            <div class="education-container container-block">
-                <h2 class="container-block-title">Qualificações</h2>
-                <div class="item">
-                    <h4 class="degree">Ensino Médio</h4>
-                    <h5 class="meta">Centro Educacional Stella Maris</h5>
-                    <div class="time">Concluído</div>
-                </div><!--//item-->
-                <div class="item">
-                    <h4 class="degree">Ensino Superior - Bacharelado em Ciência da Computação</h4>
-                    <h5 class="meta">Universidade Católica de Brasília</h5>
-                    <div class="time">Em Andamento</div>
-                </div><!--//item-->
-                <div class="item">
-                    <h4 class="degree">Curso Básico de Informática</h4>
-                    <h5 class="meta">Microlins</h5>
-                    <div class="time">Concluído</div>
-                </div><!--//item-->
-                <div class="item">
-                    <h4 class="degree">Curso Básico de Web Design</h4>
-                    <h5 class="meta">SAGA - School of Art</h5>
-                    <div class="time">Concluído (Certificado)</div>
-                </div><!--//item-->
-            </div><!--//education-container-->
-        </div><!--//sidebar-wrapper-->
-
-        <div class="main-wrapper">
-            <section class="section experiences-section">
-                <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiência</h2>
-		    
-		<div class="item">
-		    <div class="meta">
-		      <div class="upper-row">
-			  <h3 class="job-title">Programador - Instituto Nacional de Metereologia</h3>
-			  <div class="time">05/2015 - Atualmente</div>
-		      </div><!--//upper-row-->
-		    </div><!--//meta-->
-		    <div class="details">
-		      <p></p>
-		    </div><!--//details-->
-		</div><!--//item-->
-		    
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Estágio Senado (Interlegis)</h3>
-                            <div class="time">03/2015 - 03/2017</div>
-                        </div><!--//upper-row-->
-                    </div><!--//meta-->
-                    <div class="details">
-                      <p>Desenvolvimento de sistemas web em Python/Django.</p>
-                    </div><!--//details-->
-                </div><!--//item-->
-
-
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Estágio BEPiD</h3>
-                            <div class="time">2014</div>
-                        </div><!--//upper-row-->
-                    </div><!--//meta-->
-                    <div class="details">
-                      <p>Treinamento de Objective-C para desenvolvimento de aplicativos.<br />Três aplicativos publicados na AppStore.</p>
-                    </div><!--//details-->
-                </div><!--//item-->
-            </section><!--//section-->
-
-            <section class="section projects-section">
-                <h2 class="section-title"><i class="fa fa-archive"></i>Projetos</h2>
-                <div class="item">
-                    <span class="project-title"><a href="https://github.com/interlegis/sapl" target="_blank">SAPL</a></span> - <span class="project-tagline">Sistema de Apoio ao Processo Legislativo</span>
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="https://github.com/interlegis/atendimento" target="_blank">Atendimento</a></span> - <span class="project-tagline">Sistema de Atendimento a Usuários Externos</span>
-                </div><!--//item-->
-            </section><!--//section-->
-			
-			<section class="section projects-section">
-                <h2 class="section-title"><i class="fa  fa-folder"></i>Certificados</h2>
-                <div class="item">
-                    <span class="project-title">Pacote Adobe</span> - <span class="project-tagline">408Hs</span>&nbsp;-&nbsp;<a href="./img/Adobe.png" target="_blank"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
-
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title">Desenv. Aplicativos iOS</span> - <span class="project-tagline">100Hs</span>&nbsp;-&nbsp;<a href="./img/iOS.png" target="_blank"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
-                </div><!--//item-->
-                <div class="item">
-                </div><!--//item-->
-                    <span class="project-title">HTML Avançado</span> - <span class="project-tagline">6Hs</span>&nbsp;-&nbsp;<a href="./img/HTML.png" target="_blank"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
-            </section><!--//section-->
-
-            <section class="skills-section section">
-                <h2 class="section-title"><i class="fa fa-rocket"></i>Conhecimentos</h2>
-                <div class="skillset">
-                  <div class="item">
-                      <h3 class="level-title">C</h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="38%">
+  <body class="bg-fixed bg-1">
+<!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+   <div class="main-container">
+    <div class="main wrapper clearfix">
+      <!-- Header Start -->
+        <header id="header">
+            <div id="logo">
+              <h2>Eduardo Edson Batista Cordeiro Alves</h2>
+              <h4>Programador</h4>
+            </div>
+        </header>
+        <!-- Header End -->
+        <!-- Main Tab Container -->
+        <div id="tab-container" class="tab-container">
+          <!-- Tab List -->
+            <ul class='etabs'>
+                <li class='tab' id="tab-sobre">
+                  <a href="#sobre"><i class="icon-user"></i><span>qualificacoes</span></a>
+                </li>
+                <li class='tab'>
+                  <a href="#qualificacoes"><i class="icon-file-text"></i><span>Qualificações</span></a>
+                </li>
+                <li class='tab'>
+                  <a href="#projetos"><i class="icon-heart"></i><span>Projetos</span></a>
+                </li>
+                <li class='tab'>
+                  <a href="#contato"><i class="icon-envelope"></i><span>contato</span></a>
+                </li>
+            </ul>
+          <!-- End Tab List -->
+            <div id="tab-data-wrap">
+              <!-- sobre Tab Data -->
+                <div id="sobre">
+                    <section class="clearfix">
+                        <div class="g2">
+                            <div class="photo">
+                                <img src="images/foto.png" alt="foto" />
+                            </div>
+                            <div class="info">
+                              <h2>Eduardo</h2>
+                              <h4>Programador</h4>
+                              <hr />
+                              <p><a href="/down/CV Eduardo Edson Batista Cordeiro Alves.pdf" target="_blank"><i class="fa fa-download"></i> &nbsp;-&nbsp; Download Currículo Versão PDF</a></p>
                           </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">C#</h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="37%">
+                        </div>
+                        <div class="g1">
+                            <div class="main-links sidebar">
+                                <ul>
+                                    <li>
+                                      <a href="#qualificacoes">Minhas Qualificações</a>
+                                    </li>
+                                    <li>
+                                      <a href="#projetos">Meus Projetos</a>
+                                    </li>
+                                    <li>
+                                        <a href="#contato">Contrate-me para seu próximo projeto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="break"></div>
+                        <div class="contact-info">
+                          <div class="g1">
+                            <div class="item-box clearfix">
+                              <i class="icon-envelope"></i>
+                              <div class="item-data">
+                                <h3><a href="mailto:edu-23@hotmail.com">edu-23@hotmail.com</a></h3>
+                                <p>Email</p>
+                              </div>
+                            </div>
                           </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">Java</h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="30%">
+                          <div class="g1">
+                            <div class="item-box clearfix">
+                              <i class="icon-facebook"></i>
+                              <div class="item-data">
+                                <h3><a href="https://www.facebook.com/eduardo.alves.23">eduardo.alves.23</a></h3>
+                                <p>Facebook</p>
+                              </div>
+                            </div>
                           </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">javascript</h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="37%">
+                          <div class="g1">
+                            <div class="item-box clearfix">
+                              <i class="icon-github"></i>
+                              <div class="item-data">
+                                <h3><a href="https://github.com/eduardoedson">eduardoedson</a></h3>
+                                <p>GitHub</p>
+                              </div>
+                            </div>
                           </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">Objective-C</h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="55%">
-                          </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">Python &amp; Django</h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="70%">
-                          </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">HTML</h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="76%">
-                          </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">MySQL</h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="52%">
-                          </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">SQLServer</h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="53%">
-                          </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">OracleDB</h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="55%">
-                          </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">DB2</h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="50%">
-                          </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">PostgreSQL</h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="60%">
-                          </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">Premiere</h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="43%">
-                          </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">AfterEffects</h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="34%">
-                      </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">Photoshop</h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="58%">
-                      </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
-                  <div class="item">
-                      <h3 class="level-title">Illustrator</h3>
-                      <div class="level-bar">
-                          <div class="level-bar-inner" data-level="60%">
-                      </div>
-                      </div><!--//level-bar-->
-                  </div><!--//item-->
-
+                        </div>
+                    </section><!-- content -->
                 </div>
-            </section><!--//skills-section-->
+              <!-- End sobre Tab Data -->
+              <!-- qualificacoes Tab Data -->
+                <div id="qualificacoes">
+                    <section class="clearfix">
+                        <div class="g2">
+                          <h3>Experiência</h3>
+                          <ul class="no-list work">
+                            <li>
+                              <h5>Inmet</h5><span class="label label-info">05/2017 - Atualmente</span>
+                              <p>Programador</p>
+                            </li>
+                            <li>
+                              <h5>Estágio Senado (Interlegis)</h5><span class="label label-success">03/2015 - 03/2017</span>
+                              <p>Desenvolvimento de sistemas web em Python/Django.</p>
+                            </li>
+                            <li>
+                              <h5>Estágio BEPiD</h5><span class="label label-success">2014</span>
+                              <p>Treinamento de Objective-C para desenvolvimento de aplicativos.<br />Três aplicativos publicados na AppStore.</p>
+                            </li>
+                          </ul>
+                          <hr />
+                          <h3>Certificados</h3>
+                          <ul class="no-list work">
+                            <li>
+                              <h5>Pacote Adobe&nbsp;-&nbsp;<a href="./img/Adobe.png" target="_blank"><i class="fa fa-file-image-o" aria-hidden="true"></a></i></h5><span class="label label-success">408 Hs</span>
+                              <p></p>
+                            </li>
+                            <li>
+                              <h5>Desenv. Objective-C&nbsp;-&nbsp;<a href="./img/iOS.png" target="_blank"><i class="fa fa-file-image-o" aria-hidden="true"></a></i></h5><span class="label label-success">1000 Hs Hs</span>
+                              <p></p>
+                            </li>
+                            <li>
+                              <h5>HTML Avançado&nbsp;-&nbsp;<a href="./img/HTML.png" target="_blank"><i class="fa fa-file-image-o" aria-hidden="true"></a></i></h5><span class="label label-success">6 Hs Hs</span>
+                              <p></p>
+                            </li>
+                          </ul>
+                          <hr />
+                          <h3>Educação</h3>
+                          <ul class="no-list work">
+                            <li>
+                              <h5>Ensino Superior</h5><span class="label label-info">Em Andamento</span>
+                              <p>Bacharelado em Ciência da Computação - Universidade Católica de Brasília</p>
+                            </li>
+                            <li>
+                              <h5>Ensino Médio</h5><span class="label label-success">Concluído</span>
+                              <p>Centro Educacional Stella Maris</p>
+                            </li>
+                            <li>
+                              <h5>Curso Básico de Informática</h5><span class="label label-success">Concluído</span>
+                              <p>Microlins</p>
+                            </li>
+                            <li>
+                              <h5>Curso Básico de Web Design</h5><span class="label label-success">Concluído</span>
+                              <p>SAGA - School of Art</p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="g1">
+                            <div class="sidebar">
+                                <h3>Conhecimentos</h3>
 
-        </div><!--//main-body-->
-    </div>
+                                <h5>Softwares</h5>
+                                <div class="meter emerald"><span style="width: 70%"><span>Photoshop</span></span></div>
+                                <div class="meter carrot"><span style="width: 60%"><span>Illustrator</span></span></div>
+                                <div class="meter sunflower"><span style="width: 60%"><span>Premiere</span></span></div>
+                                <div class="meter pomengrate"><span style="width: 75%"><span>Microsoft Office</span></span></div>
+                                <div class="meter asbestos"><span style="width: 65%"><span>Linux</span></span></div>
+                                <div class="meter wisteria"><span style="width: 70%"><span>Windows</span></span></div>
+                                <div class="break"></div>
 
-    <footer class="footer">
-        <div class="text-center">
-                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
+                                <hr />
 
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
+                                <h5>Linguagem de Programação</h5>
+                                <div class="meter emerald"><span style="width: 88%"><span>HTML</span></span></div>
+                                <div class="meter carrot"><span style="width: 75%"><span>PHP</span></span></div>
+                                <div class="meter wisteria"><span style="width: 60%"><span>JavaScript</span></span></div>
+                                <div class="meter sunflower"><span style="width: 42%"><span>Objective-C</span></span></div>
+                                <div class="meter asbestos"><span style="width: 82%"><span>Python & Django</span></span></div>
+                                <div class="meter pomengrate"><span style="width: 40%"><span>Java</span></span></div>
+                                <div class="meter emerald"><span style="width: 20%"><span>C#</span></span></div>
+                                <div class="meter carrot"><span style="width: 65%"><span>C</span></span></div>
+                                <div class="break"></div>
+
+                                <hr />
+
+                                <h5>Banco de Dados</h5>
+                                <div class="meter emerald"><span style="width: 72%"><span>MySQL</span></span></div>
+                                <div class="meter carrot"><span style="width: 64%"><span>SQLServer</span></span></div>
+                                <div class="meter wisteria"><span style="width: 50%"><span>OracleDB</span></span></div>
+                                <div class="meter sunflower"><span style="width: 20%"><span>DB2</span></span></div>
+                                <div class="meter asbestos"><span style="width: 83%"><span>PostgreSQL</span></span></div>
+                                <div class="break"></div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+              <!-- End qualificacoes Tab Data -->
+              <!-- projetos Tab Data -->
+                <div id="projetos">
+                    <section class="clearfix">
+                        <h3>Projetos</h3>
+                        <ul class="no-list work">
+                          <a href="https://github.com/interlegis/sapl">
+                            <li>
+                              <h5>SAPL</h5>
+                              <p>Sistema de Apoio ao Processo Legislativo</p>
+                            </li>
+                          </a>
+                          <a href="https://github.com/interlegis/atendimento">
+                            <li>
+                              <h5>Atendimento</h5>
+                              <p>Sistema de Atendimento a Usuários Externos</p>
+                            </li>
+                          </a>
+                        </ul>
+                    </section>
+                </div>
+              <!-- End projetos Data -->
+              <!-- contato Tab Data -->
+                <div id="contato">
+                    <section class="clearfix">
+                       <div class="g1">
+                         <div class="sny-icon-box">
+                           <div class="sny-icon">
+                              <i class="icon-globe"></i>
+                            </div>
+                            <div class="sny-icon-content">
+                              <h4>Endereço</h4>
+                              <p>Quadra 104 <br /> Norte (Águas Claras) <br /> Brasília - DF</p>
+                            </div>
+                         </div>
+                       </div>
+                       <div class="g1">
+                         <div class="sny-icon-box">
+                           <div class="">
+                              <i class=""></i>
+                            </div>
+                            <div class="sny-icon-content">
+                              <h4></h4>
+                              <p></p>
+                            </div>
+                         </div>
+                       </div>
+                       <div class="g1">
+                         <div class="sny-icon-box">
+                           <div class="sny-icon">
+                              <i class="icon-phone"></i>
+                            </div>
+                            <div class="sny-icon-content">
+                              <h4>Telefones</h4>
+                              <p>(61) 3257 1604<br/>(61) 9 9801 8395</p>
+                            </div>
+                         </div>
+                       </div>
+                       <div class="break"></div>
+
+                    </section>
+                </div>
+              <!-- End contato Data -->
+            </div>
+        </div>
+        <!-- End Tab Container -->
+        <footer>
+            <p>@2018 - Designed By <a href="http://www.mrova.com" title="Pune web designing company">mRova</a>.</p>
+        </footer>
+    </div><!-- #main -->
+</div><!-- #main-container -->
+
+
+
 </body>
 </html>
