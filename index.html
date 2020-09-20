@@ -1,354 +1,199 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Eduardo Edson</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')
-    </script>
-    <script src="js/vendor/jquery.hashchange.min.js"></script>
-    <script src="js/vendor/jquery.easytabs.min.js"></script>
-    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
-
-
-    <script src="js/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-      <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
-      <![endif]-->
-</head>
-
-<body class="bg-fixed bg-1">
-    <!--[if lt IE 7]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
-    <div class="main-container">
-        <div class="main wrapper clearfix">
-            <!-- Header Start -->
-            <header id="header">
-                <div id="logo">
-                    <h2>Eduardo Edson Batista Cordeiro Alves</h2>
-                    <h4>Programador FullStack</h4>
-                </div>
-            </header>
-            <!-- Header End -->
-            <!-- Main Tab Container -->
-            <div id="tab-container" class="tab-container">
-                <!-- Tab List -->
-                <ul class='etabs'>
-                    <li class='tab' id="tab-sobre">
-                        <a href="#sobre"><i class="icon-user"></i><span>Sobre</span></a>
-                    </li>
-                    <li class='tab'>
-                        <a href="#qualificacoes"><i class="icon-file-text"></i><span>Qualificações</span></a>
-                    </li>
-                    <li class='tab'>
-                        <a href="#projetos"><i class="icon-heart"></i><span>Projetos</span></a>
-                    </li>
-                    <li class='tab'>
-                        <a href="#contato"><i class="icon-envelope"></i><span>contato</span></a>
-                    </li>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Curriculum - Eduardo Edson</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Eduardo Edson</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certificates">Certificates</a></li>
                 </ul>
-                <!-- End Tab List -->
-                <div id="tab-data-wrap">
-                    <!-- sobre Tab Data -->
-                    <div id="sobre">
-                        <section class="clearfix">
-                            <div class="g2">
-                                <div class="photo">
-                                    <img src="images/foto.png" alt="foto" />
-                                </div>
-                                <div class="info">
-                                    <h2>Eduardo</h2>
-                                    <h4>Programador FullStack</h4>
-                                    <hr />
-                                    <p><a href="/down/CV Eduardo Edson Batista Cordeiro Alves.pdf" target="_blank"><i class="fa fa-download"></i> &nbsp;-&nbsp; Download Currículo Versão PDF</a></p>
-                                </div>
-                            </div>
-                            <div class="g1">
-                                <div class="main-links sidebar">
-                                    <ul>
-                                        <li>
-                                            <a href="#qualificacoes">Minhas Qualificações</a>
-                                        </li>
-                                        <li>
-                                            <a href="#projetos">Meus Projetos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#contato">Contrate-me para seu próximo projeto</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="break"></div>
-                            <div class="contact-info">
-                                <div class="g1">
-                                    <div class="item-box clearfix">
-                                        <i class="icon-envelope"></i>
-                                        <div class="item-data">
-                                            <h3><a href="mailto:edu-23@hotmail.com">edu-23@hotmail.com</a></h3>
-                                            <p>Email</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="g1">
-                                    <div class="item-box clearfix">
-                                        <i class="icon-linkedin"></i>
-                                        <div class="item-data">
-                                            <h3><a href="https://www.linkedin.com/in/eduardo-edson-147339136/">Eduardo Edson</a></h3>
-                                            <p>Linkedin</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="g1">
-                                    <div class="item-box clearfix">
-                                        <i class="icon-github"></i>
-                                        <div class="item-data">
-                                            <h3><a href="https://github.com/eduardoedson">eduardoedson</a></h3>
-                                            <p>GitHub</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- content -->
-                    </div>
-                    <!-- End sobre Tab Data -->
-                    <!-- qualificacoes Tab Data -->
-                    <div id="qualificacoes">
-                        <section class="clearfix">
-                            <div class="g2">
-                                <h3>Experiência</h3>
-                                <ul class="no-list work">
-                                    <li>
-                                        <h5>Inmet</h5><span class="label label-info">05/2017 - Atualmente</span>
-                                        <p>Programador FullStack e Mobile (React Native)</p>
-                                    </li>
-                                    <li>
-                                        <h5>Estágio Senado (Interlegis)</h5><span class="label label-success">03/2015 - 03/2017</span>
-                                        <p>Desenvolvimento de sistemas web em Python/Django.</p>
-                                    </li>
-                                    <li>
-                                        <h5>Estágio BEPiD</h5><span class="label label-success">2014</span>
-                                        <p>Treinamento de Objective-C para desenvolvimento de aplicativos.<br />Três aplicativos publicados na AppStore.</p>
-                                    </li>
-                                </ul>
-                                <hr />
-                                <h3>Certificados</h3>
-                                <ul class="no-list work">
-                                    <li>
-                                        <h5>Pacote Adobe&nbsp;-&nbsp;<a href="./img/Adobe.png" target="_blank"><i class="fa fa-file-image-o" aria-hidden="true"></a></i>
-                                        </h5><span class="label label-success">408 Hs</span>
-                                        <p></p>
-                                    </li>
-                                    <li>
-                                        <h5>Desenv. Objective-C&nbsp;-&nbsp;<a href="./img/iOS.png" target="_blank"><i class="fa fa-file-image-o" aria-hidden="true"></a></i>
-                                        </h5><span class="label label-success">1000 Hs</span>
-                                        <p></p>
-                                    </li>
-                                    <li>
-                                        <h5>HTML Avançado&nbsp;-&nbsp;<a href="./img/HTML.PNG" target="_blank"><i class="fa fa-file-image-o" aria-hidden="true"></a></i>
-                                        </h5><span class="label label-success">6 Hs</span>
-                                        <p></p>
-                                    </li>
-                                    <li>
-                                        <h5>Data Science: Visualização de dados com Python&nbsp;-&nbsp;<a href="./img/Data_Science_Python.png" target="_blank"><i class="fa fa-file-image-o" aria-hidden="true"></a></i>
-                                        </h5><span class="label label-success">2 Hs</span>
-                                        <p></p>
-                                    </li>
-                                </ul>
-                                <hr />
-                                <h3>Educação</h3>
-                                <ul class="no-list work">
-                                    <li>
-                                        <h5>Ensino Superior</h5><span class="label label-success">Concluído</span>
-                                        <p>Bacharelado em Ciência da Computação - Universidade Católica de Brasília</p>
-                                    </li>
-                                    <li>
-                                        <h5>Ensino Médio</h5><span class="label label-success">Concluído</span>
-                                        <p>Centro Educacional Stella Maris</p>
-                                    </li>
-                                    <li>
-                                        <h5>Curso Básico de Informática</h5><span class="label label-success">Concluído</span>
-                                        <p>Microlins</p>
-                                    </li>
-                                    <li>
-                                        <h5>Curso Básico de Web Design</h5><span class="label label-success">Concluído</span>
-                                        <p>SAGA - School of Art</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="g1">
-                                <div class="sidebar">
-                                    <h3>Conhecimentos</h3>
-
-                                    <h5>Softwares</h5>
-                                    <div class="meter emerald"><span style="width: 100%"><span>Photoshop</span></span>
-                                    </div>
-                                    <div class="meter pomengrate"><span style="width: 100%"><span>Microsoft Office</span></span>
-                                    </div>
-                                    <div class="meter asbestos"><span style="width: 100%"><span>Linux</span></span>
-                                    </div>
-                                    <div class="meter wisteria"><span style="width: 100%"><span>Windows</span></span>
-                                    </div>
-                                    <div class="break"></div>
-
-                                    <hr />
-
-                                    <h5>Linguagem de Programação</h5>
-                                    <div class="meter emerald"><span style="width: 100%"><span>HTML</span></span>
-                                    </div>
-                                    <div class="meter carrot"><span style="width: 100%"><span>PHP</span></span>
-                                    </div>
-                                    <div class="meter wisteria"><span style="width: 100%"><span>JavaScript</span></span>
-                                    </div>
-                                    <div class="meter sunflower"><span style="width: 100%"><span>Objective-C</span></span>
-                                    </div>
-                                    <div class="meter asbestos"><span style="width: 100%"><span>Python</span></span>
-                                    </div>
-                                    <div class="meter pomengrate"><span style="width: 100%"><span>ReactJS</span></span>
-                                    </div>
-                                    <div class="meter emerald"><span style="width: 100%"><span>React Native</span></span>
-                                    </div>
-                                    <div class="meter carrot"><span style="width: 100%"><span>JavaScript</span></span>
-                                    </div>
-                                    <div class="meter carrot"><span style="width: 100%"><span>C</span></span>
-                                    </div>
-                                    <div class="break"></div>
-
-                                    <hr />
-
-                                    <h5>Banco de Dados</h5>
-                                    <div class="meter emerald"><span style="width: 100%"><span>MySQL</span></span>
-                                    </div>
-                                    <div class="meter asbestos"><span style="width: 100%"><span>PostgreSQL</span></span>
-                                    </div>
-                                    <div class="break"></div>
-
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <!-- End qualificacoes Tab Data -->
-                    <!-- projetos Tab Data -->
-                    <div id="projetos">
-                        <section class="clearfix">
-                            <h3>Projetos</h3>
-                            <ul class="no-list work">
-                                <a href="http://portal.inmet.gov.br/">
-                                    <li>
-                                        <h5>Sistemas Portal INMET (2020)</h5>
-                                        <p><a href="http://vime.inmet.gov.br/" target="_blank">Vime</a></p>
-                                        <p><a href="http://satelite.inmet.gov.br/" target="_blank">Satélite</a></p>
-                                        <p><a href="http://clima.inmet.gov.br/" target="_blank">Clima</a></p>
-                                        <p><a href="http://tempo.inmet.gov.br/" target="_blank">Tempo</a></p>
-                                        <p><a href="http://previsao.inmet.gov.br/" target="_blank">Previsão</a></p>
-                                        <p><a href="http://meteograma.inmet.gov.br/" target="_blank">Meteogramas</a></p>
-                                    </li>
-                                </a>
-                                <a href="https://github.com/interlegis/sapl">
-                                    <li>
-                                        <h5>SAPL</h5>
-                                        <p>Sistema de Apoio ao Processo Legislativo</p>
-                                    </li>
-                                </a>
-                                <a href="https://github.com/interlegis/atendimento">
-                                    <li>
-                                        <h5>Atendimento</h5>
-                                        <p>Sistema de Atendimento a Usuários Externos</p>
-                                    </li>
-                                </a>
-                                <a href="https://github.com/eduardoedson/TCC">
-                                    <li>
-                                        <h5>Prontuário Único UCB</h5>
-                                        <p>Sistema que centraliza as clinicas de saúde da UCB.</p>
-                                    </li>
-                                </a>
-                                <a href="https://github.com/eduardoedson/grib_read">
-                                    <li>
-                                        <h5>Grib Read</h5>
-                                        <p>Calcula todos os pontos e valores de um GRIB.</p>
-                                    </li>
-                                </a>
-                                <a href="https://github.com/eduardoedson/grib_api">
-                                    <li>
-                                        <h5>Grib API</h5>
-                                        <p>Decodificador GRIB.</p>
-                                    </li>
-                                </a>
-                            </ul>
-                        </section>
-                    </div>
-                    <!-- End projetos Data -->
-                    <!-- contato Tab Data -->
-                    <div id="contato">
-                        <section class="clearfix">
-                            <div class="g1">
-                                <div class="sny-icon-box">
-                                    <div class="sny-icon">
-                                        <i class="icon-globe"></i>
-                                    </div>
-                                    <div class="sny-icon-content">
-                                        <h4>Endereço</h4>
-                                        <p>Quadra 104 <br /> Norte (Águas Claras) <br /> Brasília - DF</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="g1">
-                                <div class="sny-icon-box">
-                                    <div class="">
-                                        <i class=""></i>
-                                    </div>
-                                    <div class="sny-icon-content">
-                                        <h4></h4>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="g1">
-                                <div class="sny-icon-box">
-                                    <div class="sny-icon">
-                                        <i class="icon-phone"></i>
-                                    </div>
-                                    <div class="sny-icon-content">
-                                        <h4>Telefones</h4>
-                                        <p>(61) 3257 1604<br/>(61) 9 9801 8395</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="break"></div>
-
-                        </section>
-                    </div>
-                    <!-- End contato Data -->
-                </div>
             </div>
-            <!-- End Tab Container -->
-            <footer>
-                <p>@2018 - Designed By <a href="http://www.mrova.com" title="Pune web designing company">mRova</a>.</p>
-            </footer>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Eduardo
+                        <span class="text-primary">Edson</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Block 104 · Brasília/DF - Brazil, CO 701909-180 · +55 (61) 9 9801 8395 / +55 (61) 3877 3057 ·
+                        <a href="mailto:edu-23@hotmail.com">edu-23@hotmail.com</a>
+                    </div>
+                    <p class="lead mb-5">I have experience in development of web pages and mobiles app, with current languages and, if i don't know, i can learn quickly.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/eduardo-edson-147339136/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/eduardoedson/" target="_blank"><i class="fab fa-github"></i></a>
+                        <!-- <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a> -->
+                        <a class="social-icon" href="https://www.facebook.com/eduardo.alves.23/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Inmet</h3>
+                            <div class="subheading mb-3">FullStack Developer</div>
+                            <p>Development and maintenance of systems and Apps</p>
+                            <p>Projects: </p>
+                            <ul>
+                                <li>App INMET and SYNOP</li>
+                                <li>BDMEP · <a href="https://bdmep.inmet.gov.br/">https://bdmep.inmet.gov.br/</a></li>
+                                <li>Climate · <a href="https://clima.inmet.gov.br/">https://clima.inmet.gov.br/</a></li>
+                                <li>Commet · <a href="https://commet.inmet.gov.br/">https://commet.inmet.gov.br/</a></li>
+                                <li>ApiDecea · <a href="https://apidecea.inmet.gov.br/">https://apidecea.inmet.gov.br/</a></li>
+                                <li>Meteogram · <a href="https://meteograma.inmet.gov.br/">https://meteograma.inmet.gov.br/</a></li>
+                                <li>Forecast · <a href="https://previsao.inmet.gov.br/">https://previsao.inmet.gov.br/</a></li>
+                                <li>Prevmet · Internal</li>
+                                <li>Satellite · <a href="https://satelite.inmet.gov.br/">https://satelite.inmet.gov.br/</a></li>
+                                <li>Weather · <a href="https://tempo.inmet.gov.br/">https://tempo.inmet.gov.br/</a></li>
+                                <li>Vime · <a href="https://vime.inmet.gov.br/">https://vime.inmet.gov.br/</a></li>
+                                <li>Vitral · <a href="https://vitral.inmet.gov.br/">https://vitral.inmet.gov.br/</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2017 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Intership Senado Federal (Interlegis)</h3>
+                            <div class="subheading mb-3">Web Developer</div>
+                            <p>Development of web pages with Python/Django</p>
+                            <p>Projects: </p>
+                            <ul>
+                                <li>SAPL · <a href="https://github.com/interlegis/sapl">https://github.com/interlegis/sapl</a></li>
+                                <li>Attendance · <a href="https://github.com/interlegis/atendimento">https://github.com/interlegis/atendimento</a></li>
+                                <li>Moodle (Sab eres) · <a href="https://saberes.senado.leg.br/">https://saberes.senado.leg.br/</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">March 2015 - March 2017</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">BEPiD</h3>
+                            <div class="subheading mb-3">iOS Development</div>
+                            <p>Objective-C training provided by Apple in partnership with UCB</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2014</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Universidade Católica de Brasília (UCB)</h3>
+                            <div class="subheading mb-3">University Graduate</div>
+                            <div>Bachelor of Computer Science</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Completed 2018</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Stella Maris</h3>
+                            <div class="subheading mb-3">High School</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Completed 2012</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-php"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-linux"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-windows"></i></li>
+                        <li class="list-inline-item"><i class="fas fa-database"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-git"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Courses-->
+            <section class="resume-section" id="courses">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Courses</h2>
+                    <ul>
+                        <li>English (Basic) · Cultura Inglesa · <span class="text-primary">January 2020 - Present</span></li>
+                        <li>Web Design · SAGA School of Art · Completed</li>
+                        <li>Basic Informatics Course · Microlins · Completed</li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Certificates-->
+            <section class="resume-section" id="certificates">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Certifications</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <a href="./assets/certificates/Adobe.png" target="_blank"><span class="fa-li"><i class="fas fa-image"></i></span></a>
+                            Adobe Package · <span class="text-primary">408h</span>
+                        </li>
+                        <li>
+                            <a href="./assets/certificates/iOS.png" target="_blank"><span class="fa-li"><i class="fas fa-image"></i></span></a>
+                            Objective-C Training · <span class="text-primary">1000h</span>
+                        </li>
+                        <li>
+                            <a href="./assets/certificates/HTML.PNG" target="_blank"><span class="fa-li"><i class="fas fa-image"></i></span></a>
+                            Advanced HTML · <span class="text-primary">6h</span>
+                        </li>
+                        <li>
+                            <a href="./assets/certificates/Data_Science_Python.png" target="_blank"><span class="fa-li"><i class="fas fa-image"></i></span></a>
+                            Data Science: Python Data Visualization · <span class="text-primary">2h</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
-        <!-- #main -->
-    </div>
-    <!-- #main-container -->
-
-
-
-</body>
-
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
