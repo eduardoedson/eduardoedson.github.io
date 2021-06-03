@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #15181C;
+    --dark-bg: #000000;
+    --text: #CDCDCE;
+    --secondary-text: #C10000;
+}
+
+body {
+    background-color: var(--dark-bg);
+    font-family: "Lexend", sans-serif;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-text);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--bg);
+}

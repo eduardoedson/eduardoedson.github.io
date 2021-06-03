@@ -1,0 +1,274 @@
+.content {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    gap: 15rem;
+}
+
+.name {
+    padding-bottom: 2rem;
+}
+
+.name h1 {
+    font-weight: 500;
+    letter-spacing: 0.4rem;
+    font-size: 3rem;
+}
+
+.name h2 {
+    color: var(--text);
+    letter-spacing: 0.15rem;
+}
+
+.contact {
+    line-height: 1.35rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+}
+
+.description {
+    text-align: justify;
+    font-size: 22px;
+    padding: 1.4rem 0;
+}
+
+.downloads {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.2rem;
+    padding-top: 1rem;
+}
+
+.socials a,
+.download-pdf a {
+    text-decoration: none;
+    color: var(--text);
+    transition: 0.6s;
+    font-size: 2rem;
+}
+
+.download-pdf a {
+    color: var(--secondary-text);
+}
+
+.socials a:hover,
+.download-pdf a:hover {
+    filter: brightness(0.7);
+}
+
+.perfil-photo {
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+.projects,
+.educations,
+.skills,
+.experiences,
+.certificates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.projects h1,
+.educations h1,
+.skills h1,
+.experiences h1,
+.certificates h1 {
+    font-weight: 500;
+    letter-spacing: 0.35rem;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.row-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    gap: 25px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    border-radius: 15px;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    max-width: 30%;
+    width: 30%;
+    height: 430px;
+    max-height: 430px;
+    transition: 0.5s;
+}
+
+.project:hover {
+    box-shadow: 0 0.625rem 1.5625rem rgba(255, 255, 255, 0.1);
+}
+
+.project-photo {
+    width: auto;
+    height: 220px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.project-title {
+    color: var(--text);
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.project-description {
+    color: var(--text);
+    text-align: justify;
+}
+
+.project-btn {
+    align-self: flex-end;
+    background-color: var(--dark-bg);
+    padding: 6px;
+    border-radius: 3px;
+    width: 40%;
+    text-decoration: none;
+    color: var(--secondary-text);
+    margin: 20px 0;
+    text-align: center;
+}
+
+.project-btn:hover {
+    filter: brightness(0.7);
+}
+
+.row-educations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    gap: 30px;
+}
+
+.education {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.education h2 {
+    font-size: 30px;
+    text-decoration: underline;
+    color: var(--text);
+    margin: 13px 0;
+}
+
+.education h3 {
+    font-size: 22px;
+}
+
+.education h4 {
+    font-size: 18px;
+}
+
+.education .date {
+    text-align: right;
+    color: var(--secondary-text);
+}
+
+.skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    font-size: 100px;
+    padding: 20px 0;
+}
+
+.skill-icons i:hover {
+    filter: brightness(0.7);
+}
+
+.experience {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: var(--bg);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.date-experience {
+    text-align: right;
+    color: var(--secondary-text);
+    font-size: 22px;
+}
+
+.name-experience {
+    font-size: 40px;
+    color: var(--text);
+}
+
+.role-experience {
+    font-size: 28px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid white;
+}
+
+.technologies-experience {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.certificates {
+    font-size: 22px;
+}
+
+.certificate {
+    margin: 4px 0;
+}
+
+.certificate a {
+    text-decoration: none;
+    color: var(--secondary-text);
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 25px;
+}
+
+.certificate a:hover {
+    filter: brightness(0.7);
+}
+
+.certificate-name {
+    color: var(--text);
+}
+
+.certificate-hour {
+    color: var(--secondary-text);
+}
