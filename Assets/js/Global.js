@@ -24,7 +24,7 @@ $('#menu-mobile').click(function() {
     $('.links').css('display', 'flex')
 })
 
-$('#close-menu-mobile, .links > a').click(function() {
+$('#close-menu-mobile').click(function() {
     $('.links').fadeOut('slow', function() {
         $('.links').css('display', 'none')
     })
