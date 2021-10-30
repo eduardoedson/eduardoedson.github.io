@@ -1,0 +1,42 @@
+@use 'variables'
+
+html
+  font-size: 14px
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  font-family: Didact Gothic, sans-serif
+  font-size: 18px
+  letter-spacing: 0.1rem
+
+h1, h2
+  font-weight: lighter
+  font-family: Playfair Display
+
+h1
+  font-size: 2.7rem
+  text-shadow: 1px 1px 2px white
+
+h2
+  font-size: 1.5rem
+
+i
+  color: variables.$primary-color
+
+a
+  color: variables.$primary-color
+  border-bottom: transparent
+  text-decoration: none
+  transition: .4s
+
+  &:hover
+    border-bottom: .1rem solid variables.$primary-color
+
+input
+  border: none
+  outline: none
+
+ul
+  list-style: none

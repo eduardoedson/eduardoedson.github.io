@@ -1,0 +1,95 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixin'
+
+.projects-content
+  background-color: variables.$secondary-bg-color
+  padding: 8rem 10rem
+
+  @include base-mixin.mobile
+    padding: 2rem
+
+  h1
+    color: variables.$bg-color
+    margin-bottom: 1rem
+    text-align: center
+
+.row-projects
+  display: flex
+  justify-content: center
+
+  @include base-mixin.mobile
+    flex-direction: column
+    align-items: center
+
+.techs
+  margin-top: 0.5rem
+  align-self: flex-start
+
+.project
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 30%
+  margin: 1rem 1.5rem
+  padding: 1rem
+  border: 3px solid variables.$bg-color
+  background-color: variables.$light-color
+  border-radius: 5px
+  transition: 0.4s
+
+  @include base-mixin.mobile
+    width: 100%
+    margin: 1rem
+
+  &:hover
+    box-shadow: 0 1.925rem 2.9625rem variables.$light-color
+
+  img
+    border-radius: 3px
+    max-width: 100%
+
+  h2
+    color: variables.$bg-color
+    border-top: 2px solid variables.$bg-color
+    border-bottom: 2px solid variables.$bg-color
+    font-size: 2.2rem
+    margin: 1rem 0
+
+    @include base-mixin.mobile
+      font-size: 1.6rem
+      text-align: center
+
+  p
+    align-self: flex-start
+    font-size: 1.3rem
+
+    @include base-mixin.mobile
+      font-size: 1rem
+      text-align: justify
+    
+  span
+    font-size: 3rem
+
+    @include base-mixin.mobile
+      font-size: 2rem
+  a
+    display: flex
+    align-items: center
+    align-self: flex-end
+    margin-top: 2rem
+    color: variables.$bg-color
+    font-size: 1.3rem
+
+    @include base-mixin.mobile
+      font-size: 1rem
+
+    i
+      color: variables.$bg-color
+      font-size: 1.2rem
+      margin-left: 0.5rem
+
+      @include base-mixin.mobile
+        font-size: 0.9rem
+
+    &:hover
+      border-color: variables.$bg-color

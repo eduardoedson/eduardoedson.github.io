@@ -1,0 +1,54 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixin'
+  
+.experience-content
+  display: flex
+  flex-direction: column
+  justify-content: center
+  background-color: white
+  padding: 8rem 10rem
+
+  @include base-mixin.mobile
+    padding: 2rem
+
+  h1
+    color: variables.$bg-color
+    margin-bottom: 1rem
+    text-align: center
+
+.experience
+  display: flex
+  flex-direction: column
+  margin: 1rem 0
+
+  .name
+    display: flex
+    justify-content: space-between
+    color: variables.$bg-color
+    margin: 0.5rem 0
+    
+    p
+      font-size: 1.8rem
+    
+      @include base-mixin.mobile
+        font-size: 1.2rem
+
+  .role
+    @include base-mixin.mobile
+      font-size: 1.2rem
+
+  .desc
+    margin: 1rem 0
+    letter-spacing: 0.250rem
+    text-align: justify
+    
+    @include base-mixin.mobile
+      font-size: 1rem
+
+  .techs
+    text-align: justify
+
+    @include base-mixin.mobile
+      font-size: 1rem
+
+

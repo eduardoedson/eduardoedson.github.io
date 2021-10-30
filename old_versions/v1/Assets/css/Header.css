@@ -1,0 +1,68 @@
+.header {
+    background: var(--bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 1.66rem 5rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.after-header {
+    padding: 1rem 5rem;
+    background-color: whitesmoke;
+}
+
+.after-header .name-logo,
+.after-header .links a {
+    color: var(--secondary-text);
+}
+
+.close-menu-mobile {
+    display: none;
+}
+
+.name-logo {
+    position: relative;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1.65rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+.name-logo:hover {
+    filter: brightness(0.6);
+}
+
+.links {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--text);
+    margin: 0 1rem;
+    font-weight: 500;
+    transition: 0.6s;
+    transition: filter 0.5s;
+    font-size: 17px;
+}
+
+.links a:hover {
+    filter: brightness(0.7);
+    text-decoration: underline;
+}
+
+.menu-mobile {
+    display: none;
+}

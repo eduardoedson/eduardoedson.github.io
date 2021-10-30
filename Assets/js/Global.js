@@ -1,31 +1,9 @@
-AOS.init()
-
-$('.links a').click(function(e) {
-    let id = $(this).attr('href')
-    let $id = $(id)
-
-    if ($id.length === 0) {
-        return
-    }
-
-    e.preventDefault();
-
-    let pos = $id.offset().top
-    $('body, html').animate({ scrollTop: pos - 100 }, 1000)
-})
-
-window.addEventListener('scroll', () => {
-    var header = document.getElementById('header')
-    header.classList.toggle('after-header', window.scrollY > 50)
-})
-
-$('#menu-mobile').click(function() {
-    $('.links').fadeIn('slow')
-    $('.links').css('display', 'flex')
-})
-
-$('#close-menu-mobile').click(function() {
-    $('.links').fadeOut('slow', function() {
-        $('.links').css('display', 'none')
-    })
+$('#mobile-menu-icon').click(function() {
+  if($('.header-items').css('display') === 'flex') {
+    $('.header-items').fadeOut('slow')
+    $('.header-items').css('display', 'none')
+  } else {
+    $('.header-items').fadeIn('slow')
+    $('.header-items').css('display', 'flex')
+  }
 })
