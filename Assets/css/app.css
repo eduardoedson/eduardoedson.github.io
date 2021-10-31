@@ -101,6 +101,7 @@ ul {
   flex-direction: column;
   justify-content: flex-end;
   color: #ffffff;
+  margin-left: 2rem;
   margin-bottom: 3rem;
 }
 @media (max-width: 425px) {
@@ -125,7 +126,7 @@ ul {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 .about-content .name-role, .about-content .description, .about-content .socials {
   margin-bottom: 3rem;
@@ -423,11 +424,12 @@ ul {
 
 .certificate {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 0.4rem;
 }
 .certificate a {
   margin: 0 1rem;
+  color: #5569dc;
 }
 .certificate a:hover {
   border-bottom: transparent;

@@ -7,3 +7,17 @@ $('#mobile-menu-icon').click(function() {
     $('.header-items').css('display', 'flex')
   }
 })
+
+$('.header-item a').click(function(e) {
+  let id = $(this).attr('href')
+  let $id = $(id)
+
+  if ($id.length === 0) {
+      return
+  }
+
+  e.preventDefault();
+
+  let pos = $id.offset().top
+  $('body, html').animate({ scrollTop: pos - 100 }, 1000)
+})
