@@ -31,10 +31,14 @@
       text-shadow: 1px 1px 2px black
 
   &-right
-    padding: 2rem 5rem
+    padding: 2rem 3rem
     background: variables.$bg-color
     text-align: center
     color: variables.$primary-color
+    max-width: 350px
+
+    @include base-mixin.mobile
+      max-width: 100%
 
     img
       border-radius: 50%

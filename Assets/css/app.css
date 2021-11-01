@@ -117,10 +117,16 @@ ul {
   text-shadow: 1px 1px 2px black;
 }
 .about-content-right {
-  padding: 2rem 5rem;
+  padding: 2rem 3rem;
   background: #5569dc;
   text-align: center;
   color: #ffffff;
+  max-width: 350px;
+}
+@media (max-width: 425px) {
+  .about-content-right {
+    max-width: 100%;
+  }
 }
 .about-content-right img {
   border-radius: 50%;
