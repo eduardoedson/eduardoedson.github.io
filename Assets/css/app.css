@@ -10,6 +10,14 @@ html {
   font-size: 18px;
   letter-spacing: 0.1rem;
 }
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 8px;
+  background: #ccd4ff;
+}
+*::-webkit-scrollbar-thumb {
+  background: #5569dc;
+}
 
 h1, h2 {
   font-weight: lighter;
