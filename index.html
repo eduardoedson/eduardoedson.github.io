@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Curriculum :: Eduardo Edson</title>
+    <title>Eduardo Alves</title>
 
     <meta http-equiv="Content-Type" charset="text/html;  charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,318 +10,187 @@
     <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
     <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="./Assets/css/app.css" />
+    <link rel="stylesheet" href="Assets/styles/app.css"/>
+    <link rel="stylesheet" href="Assets/styles/mobile.css"/>
+
+    <script src="Assets/scripts/animateText.js"></script>
+    <script src="Assets/scripts/script.js"></script>
+
+    <script src="https://kit.fontawesome.com/ccb5f99efe.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">
-        <i class="fas fa-bars" id="mobile-menu-icon"></i>
-        <div class="header-items">
-            <div class="header-item"><a href="#about"><i class="fas fa-user"> About</i></a></div>
-            <div class="header-item"><a href="#projects"><i class="fas fa-project-diagram"> Projects</i></a></div>
-            <div class="header-item"><a href="#education"><i class="fas fa-graduation-cap"> Education</i></a></div>
-            <div class="header-item"><a href="#skills"><i class="fas fa-robot"> Skills</i></a></div>
-            <div class="header-item"><a href="#experience"><i class="fas fa-keyboard"> Experience</i></a></div>
-            <div class="header-item"><a href="#certificates"><i class="fas fa-file"> Certificates</i></a></div>
-        </div>
-    </header>
-
-    <!-- About -->
-    <div class="about-content" id="about">
-        <div class="about-content-left">
-            <h1>Eduardo Edson</h1>
-            <h2>I have experience in development of web pages and mobiles app, with current languages and, if i don't know, i can learn quickly.</h2>
-        </div>
-        <div class="about-content-right">
-            <img src="./Assets/images/Photo.jpeg" />
-            <div class="name-role">
-                Eduardo Edson Batista Cordeiro Alves
-                <p>FullStack Developer</p>
-            </div>
-            <div class="description">
-                <p>Bachelor of Computer Science</p>
-                <p>Portugal</p>
-            </div>
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/eduardo-edson-147339136/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/eduardoedson" target="_blank"><i class="fab fa-github-alt"></i></a>
-                <a href="https://www.facebook.com/eduardo.alves.23/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/_eduardoedson/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/_eduardoedson" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-            <a class="btn" href="./Assets/files/cv/CV - Eduardo Edson Batista Cordeiro Alves.pdf" target="_blank">
-                Download CV
-            </a>
-        </div>
-    </div>
-
-    <!-- Projects -->
-    <div class="projects-content" id="projects">
-        <h1>Recent Projects</h1>
-
-        <div class="row-projects">
-            <div class="project">
-                <img src="./Assets/images/Project-1.png" />
-                <span>
-                    <p>Project Rosies website, which stores articles about international relations and feminism, as well as columns about influential women.</p>
-                    <a href="https://github.com/eduardoedson/projetorosies" target="_blank" class="btn">See More</a>
-                </span>
-            </div>
-
-            <div class="project">
-                <img src="./Assets/images/Project-2.png" />
-                <span>
-                    <p>App that contain all informations about weather forecast of Brazil made available from Inmet.</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.inmet" target="_blank" class="btn">See More</a>
-                </span>
-            </div>
-
-            <div class="project">
-                <img src="./Assets/images/Project-3.png" />
-                <span>
-                    <p>Map containing weather forecast for the entire Brazilian territory.</p>
-                    <a href="https://portal.inmet.gov.br/previsao/mapa.html" target="_blank" class="btn">See More</a>
-                </span>
-            </div>
-        </div>
-
-        <div class="row-projects">
-            <div class="project">
-                <img src="./Assets/images/Project-4.png" />
-                <span>
-                    <p>A free curriculum template made with HTML, CSS and JS.</p>
-                    <a href="https://github.com/eduardoedson/free-curriculum-template" target="_blank" class="btn">See More</a>
-                </span>
-            </div>
-
-            <div class="project">
-                <img src="./Assets/images/Project-5.png" />
-                <span>
-                    <p>Map containing alerts for the entire Brazilian territory.</p>
-                    <a href="https://alertas2.inmet.gov.br/" target="_blank" class="btn">See More</a>
-                </span>
-            </div>
-
-            <div class="project">
-                <img src="./Assets/images/Project-6.png" />
-                <span>
-                    <p>Convert numbers to formats usually used in IT.</p>
-                    <a href="https://github.com/eduardoedson/Convert-IT-Numbers" target="_blank" class="btn">See More</a>
-                </span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Education -->
-    <div class="education-content" id="education">
-        <h1>Education</h1>
-
-        <div class="education-row">
-            <div class="education">
-                <p class="date">Completed 2018</p>
-
-                <p>Universidade Católica de Brasília - UCB</p>
-                <p>Bachelor of Computer Sciente</p>
-            </div>
-
-            <div class="education">
-                <p class="date">Completed 2012</p>
-
-                <p>Centro Educacional Stella Maris</p>
-                <p>High School</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Skills -->
-    <div class="skills-content" id="skills">
-        <h1>Skills</h1>
-
-        <div class="skill-icons">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js-square"></i>
-            <i class="fab fa-php"></i>
-            <i class="fab fa-linux"></i>
-            <i class="fab fa-windows"></i>
-            <i class="fab fa-react"></i>
-            <i class="fab fa-node"></i>
-            <i class="fab fa-github"></i>
-            <i class="fab fa-python"></i>
-            <i class="fab fa-bootstrap"></i>
-            <i class="fab fa-mdb"></i>
-            <i class="fab fa-git"></i>
-            <i class="fas fa-database"></i>
-            <i class="fab fa-wordpress-simple"></i>
-        </div>
-    </div>
-
-    <!-- Experience -->
-    <div class="experience-content" id="experience">
-        <h1>Experience</h1>
-
-        <div class="experience">
-            <div class="name">
-                <p>Vodafone Portugal</p>
-                <p>[May 2022 - Current]</p>
-            </div>
-            <div class="role">Frontend Developer</div>
-            <div class="desc">
-                I'm working in the main website from Vodafone Portugal, creating new components and making customization in the existing.
-            </div>
-            <div class="techs">Worked with: Vue.js, JavaScript, CSS, Sass, HTML, AEM, Scrum</div>
-        </div>
-
-        <div class="experience">
-            <div class="name">
-                <p>Inmet</p>
-                <p>[May 2017 - Jan 2022]</p>
-            </div>
-            <div class="role">FullStack Developer</div>
-            <div class="desc">
-                Inmet is part of the government from Brazil and is responsible, mostly, for the meteorological forecast.
-                <br /> I was responsible for the migration of legacy systems made in PHP to new technologies as react and node. 
-                <br /> I also worked with React Native and made some Apps like Inmet App.
-                <br /> All the new systems are made with JavaScript, React and Node. 
-                <br /> The APIs are made with REST to any system or user be able to search any information they want. 
-                <br /> At the react’s frontend I used Hooks, Redux and Context API. 
-                <br /> At the react native mobile app, I used the APIs already done and Redux for the data sending between views. 
-                <br /> Some of the old systems need to have their data preserved, so I made scripts Python to migrate their data to the new database with the necessary adjusts.
-            </div>
-            <div class="techs">Worked with: HTML5, CSS, JavaScript, PHP, Python, Scrum, Kanban, PostgreSQL, MySql, ReactJS, Node.JS, Yii2, React Native and Adonis.JS.</div>
-        </div>
-
-        <div class="experience">
-            <div class="name">
-                <p>Interlegis</p>
-                <p>[March 2015 - March 2017]</p>
-            </div>
-            <div class="role">Intership</div>
-            <div class="desc">
-                Interlegis is an annex of the federal senate.
-                <br /> I was responsible for maintenance of a LMS called Saberes and worked in the development of the new SAPL with another five partners using Scrum and Kanban to control the tasks. 
-                <br /> With the system made in Django & Python, I had autonomy to develop features by myself and revise codes from pull request, because the code was all in the Github to the community help it.
-            </div>
-            <div class="techs">Worked with: HTML5, CSS, JavaScript, Scrum, PHP, Moodle, Python, PostgreSQL and Django.</div>
-        </div>
-
-        <div class="experience">
-            <div class="name">
-                <p>BEPiD</p>
-                <p>[2014]</p>
-            </div>
-            <div class="role">Intership</div>
-            <div class="desc">
-                BEPiD is an initiative of Apple with the university to bring more iOS developers to job market.
-                <br />There you are prepared for one year through a course and challenges where you need develope apps.
-            </div>
-            <div class="techs">Worked with: Objective-C.</div>
-        </div>
-    </div>
-
-    <!-- Certificates -->
-    <div class="certificates-content" id="certificates">
-        <h1>Certificates</h1>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/Adobe.png" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">Adobe Package · <span class="certificate-hour">408h</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/HTML.png" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">Advanced HTML · <span class="certificate-hour">6h</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/OmniStack_11.pdf" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">Basic Concepts of Node.js, ReactJS and React Native · <span class="certificate-hour">10h</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/Data_Science_Python.png" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">Data Science: Python Data Visualization · <span class="certificate-hour">2h</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/php-good.pdf" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">Good Habits PHP · <span class="certificate-hour">30m</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/css.pdf" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">Introduction of CSS · <span class="certificate-hour">2h</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/GraphQL.pdf" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">Introduction of GraphQL · <span class="certificate-hour">15h</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/html.pdf" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">Introduction of HTML · <span class="certificate-hour">30m</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/jQuery.pdf" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">Introduction of jQuery · <span class="certificate-hour">1h</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/mysql.pdf" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">Introduction of MySQL · <span class="certificate-hour">30m</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/php.pdf" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">Introduction of PHP · <span class="certificate-hour">1h</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/React.jpg" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">React Native n Redux · <span class="certificate-hour">31.5h</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/JS-TS.jpg" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">JavaScript n TypeScript Basic to Advanced · <span class="certificate-hour">12.5h</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/Sass.jpg" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">Sass Basic to Advanced · <span class="certificate-hour">12.5h</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/Jest1.jpg" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">Testing React with Jest and Testing Library · <span class="certificate-hour">8h</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/Jest2.jpg" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">Testing JavaScript n React with Jest and Enzyme · <span class="certificate-hour">9.5h</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/iOS.png" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">Training of Objective-C · <span class="certificate-hour">1000h</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/Clean Code - Writing Code for Humans.pdf" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">Clean Code: Writing Code for Humans · <span class="certificate-hour">16h</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/GIT Fundamentals.pdf" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">GIT Fundamentals · <span class="certificate-hour">6h</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/Integration Protocols Fundamentals.pdf" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">Integration Protocols Fundamentals · <span class="certificate-hour">4h</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/Linux - Getting Started.pdf" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">Linux - Getting Started · <span class="certificate-hour">4h</span></span>
-        </div>
-        <div class="certificate">
-            <a href="./Assets/files/certificates/SQL Fundamentals.pdf" target="_blank"><i class="fas fa-image"></i></a>
-            <span class="certificate-name">SQL Fundamentals · <span class="certificate-hour">10h</span></span>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-        <p>Developed By <span class="name">Eduardo Edson</span> <i class="far fa-copyright"></i> 2021</p>
-    </div>
-
-    <script src="https://kit.fontawesome.com/1c117cd0c5.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="./Assets/js/Global.js" defer></script>
 </body>
+    <div class="content-block">
+        <div class="content-block-left">
+            <div class="content-block-name">
+                <h1 id="my-name"></h1><span class="cursor" id="cursor"></span>
+            </div>
+            <h2>Fullstack Developer</h2>
+            <div class="content-block-description">
+                <div class="content-block-description-bar"></div>
+                <span class="description">I have experience in development of web pages and mobiles app, with current languages and, if i don't know, i can learn quickly.</span>
+            </div>
 
+            <div class="content-btns">
+                <div class="links">
+                    <div>
+                        <a href="https://www.linkedin.com/in/eduardo-edson-147339136/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/eduardoedson" target="_blank"><i class="fab fa-github-alt"></i></a>
+                    </div>
+                    <a href="./Assets/files/Resume.pdf" target="_blank" class="download-cv">Download CV<i class="fa-solid fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="content-block-right">
+            <section id="about">
+                <h3>About</h3>
+                <span>
+                    I started my journey in 2013 when I started studying computer science.<br /><br />In 2014 I got mine first internship as a mobile developer and after that I kept improving myself.<br /><br />Today I'm a fullstack developer that can work with more different types of products and technologies.
+                </span>
+            </section>
+            <section id="education">
+                <h3>Education</h3>
+                <div class="education-block">
+                    <span class="education-block-date">Completed 2018</span>
+                    <div class="education-block-text">
+                        <span class="education-block-title">Universidade Católica de Brasília - UCB</span>
+                        <span class="education-block-desc">Bachelor of Computer Science</span>
+                    </div>
+                </div>
+                <div class="education-block">
+                    <span class="education-block-date">Completed 2012</span>
+                    <div class="education-block-text">
+                        <span class="education-block-title">Centro Educacional Stella Maris</span>
+                        <span class="education-block-desc">High School</span>
+                    </div>
+                </div>
+            </section>
+            <section id="experience">
+                <h3>Experience</h3>
+                <div class="experience-block">
+                    <span class="experience-block-date">10/2023 - Present</span>
+                    <div class="experience-block-text">
+                        <span class="experience-block-title">Celfocus</span>
+                        <span class="experience-block-desc">Currently working at the DAB - Labkit</span>
+                    </div>
+                </div>
+                <div class="experience-block">
+                    <span class="experience-block-date">05/2022 - 09/2023</span>
+                    <div class="experience-block-text">
+                        <span class="experience-block-title">Vodafone Portugal</span>
+                        <span class="experience-block-desc">Worked in the main website creating components to be used as foms to the user check informations and subscribe to a product.</span>
+                        <span class="experience-block-techs">
+                            <span class="tech">AEM</span>
+                            <span class="tech">CSS</span>
+                            <span class="tech">HTML</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">Python</span>
+                            <span class="tech">Sass</span>
+                            <span class="tech">Vue.js</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="experience-block">
+                    <span class="experience-block-date">05/2017 - 01/2022</span>
+                    <div class="experience-block-text">
+                        <span class="experience-block-title">INMET - Instituto Nacional de Meteorologia</span>
+                        <span class="experience-block-desc">Inmet is part of the government from Brazil and is responsible, mostly, for the meteorological forecast.<br />I was responsible for the migration of legacy systems made in PHP to new technologies as react and node.<br />I also worked with React Native and made some Apps like Inmet App.<br />All the new systems are made with JavaScript, React and Node.<br />The APIs are made with REST to any system or user be able to search any information they want.<br />At the react frontend I used Hooks, Redux and Context API.<br />At the react native mobile app, I used the APIs already done and Redux for the data sending between views.<br />Some of the old systems need to have their data preserved, so I made scripts Python to migrate their data to the new database with the necessary adjusts.</span>
+                        <span class="experience-block-techs">
+                            <span class="tech">AdonisJS</span>
+                            <span class="tech">CSS</span>
+                            <span class="tech">Drupal</span>
+                            <span class="tech">HTML</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">MySQL</span>
+                            <span class="tech">Node.js</span>
+                            <span class="tech">PHP</span>
+                            <span class="tech">PostgreSQL</span>
+                            <span class="tech">Python</span>
+                            <span class="tech">React</span>
+                            <span class="tech">React Native</span>
+                            <span class="tech">Sass</span>
+                            <span class="tech">Wordpress</span>
+                            <span class="tech">Yii2</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="experience-block">
+                    <span class="experience-block-date">03/2015 - 03/2017</span>
+                    <div class="experience-block-text">
+                        <span class="experience-block-title">Interlegis</span>
+                        <span class="experience-block-desc">Interlegis is an annex of the federal senate.<br/>I was responsible for maintenance of a LMS called Saberes and worked in the development of the new SAPL with another five partners using Scrum and Kanban to control the tasks.<br/>With the system made in Django & Python, I had autonomy to develop features by myself and revise codes from pull request, because the code was all in the Github to the community help it.</span>
+                        <span class="experience-block-techs">
+                            <span class="tech">CSS</span>
+                            <span class="tech">Djagon</span>
+                            <span class="tech">HTML</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">PHP</span>
+                            <span class="tech">PostgreSQL</span>
+                            <span class="tech">Python</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="experience-block">
+                    <span class="experience-block-date">01/2014 - 12/2014</span>
+                    <div class="experience-block-text">
+                        <span class="experience-block-title">BEPiD</span>
+                        <span class="experience-block-desc">BEPiD is an initiative of Apple with the university to bring more iOS developers to job market.<br/>There you are prepared for one year through a course and challenges where you need develope apps.</span>
+                        <span class="experience-block-techs">
+                            <span class="tech">Objective-C</span>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section id="projects">
+                <h3>Recent Projects</h3>
+                <div class="project-block" onclick="openLink('https://github.com/eduardoedson/projetorosies')">
+                    <span class="project-title">Projeto Rosies</span>
+                    <span class="project-desc">Project Rosies website, which stores articles about international relations and feminism, as well as columns about influential women.</span>
+                    <span class="project-techs">
+                        <span class="tech">CSS</span>
+                        <span class="tech">JavaScript</span>
+                        <span class="tech">Leaflet</span>
+                        <span class="tech">Wordpress</span>
+                    </span>
+                </div>
+                <div class="project-block" onclick="openLink('https://play.google.com/store/apps/details?id=com.inmet')">
+                    <span class="project-title">APP Inmet</span>
+                    <span class="project-desc">App that contain all informations about weather forecast of Brazil made available from Inmet.</span>
+                    <span class="project-techs">
+                        <span class="tech">JavaScript</span>
+                        <span class="tech">Node.js</span>
+                        <span class="tech">PostgreSQL</span>
+                        <span class="tech">React Native</span>
+                        <span class="tech">Styled Components</span>
+                    </span>
+                </div>
+                <div class="project-block" onclick="openLink('https://portal.inmet.gov.br/previsao/mapa.html')">
+                    <span class="project-title">Weather Forecast Map</span>
+                    <span class="project-desc">Map containing weather forecast for the entire Brazilian territory.</span>
+                    <span class="project-techs">
+                        <span class="tech">Bootstrap</span>
+                        <span class="tech">CSS</span>
+                        <span class="tech">JavaScript</span>
+                        <span class="tech">jQuery</span>
+                        <span class="tech">Leaflet</span>
+                        <span class="tech">Node.js</span>
+                        <span class="tech">PostgreSQL</span>
+                    </span>
+                </div>
+                <div class="project-block" onclick="openLink('https://alertas2.inmet.gov.br/')">
+                    <span class="project-title">Alert-AS</span>
+                    <span class="project-desc">Map containing weather forecast for the entire Brazilian territory.</span>
+                    <span class="project-techs">
+                        <span class="tech">CSS</span>
+                        <span class="tech">Leaflet</span>
+                        <span class="tech">Node.js</span>
+                        <span class="tech">PostgreSQL</span>
+                        <span class="tech">ReactJS</span>
+                    </span>
+                </div>
+            </section>
+        </div>
+
+    </div>
 </html>
