@@ -273,3 +273,39 @@ span {
 .links a i:hover::after, .download-cv:hover::after {
     transform: scale(1, 1);
 }
+
+.english-level-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    max-height: 80%;
+}
+
+.english-level-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.english-level-subtitle {
+    font-size: 1.25rem;
+    margin: 20px 0;
+}
+
+.english-levels-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.english-level {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    span {
+        font-size: 1.2rem;
+    }
+}
