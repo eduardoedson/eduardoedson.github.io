@@ -44,7 +44,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 100%;
+    /* height: 100%; */
+    height: 100dvh;
     top: 0;
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -54,9 +55,12 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 6rem;
-    padding-bottom: 6rem;
     width: 50%;
     gap: 5rem;
+}
+
+.content-block-right > #about > span {
+    text-align: justify;
 }
 
 h1 {
@@ -179,6 +183,13 @@ span {
     margin-bottom: 10px;
 }
 
+.experience-block-location {
+    font-size: 1.1rem;
+    color: rgb(136, 136, 136) ;
+    margin-top: -18px;
+    padding-bottom: 15px;
+}
+
 .project-title {
     transition: font-size 0.7s ease;
 }
@@ -272,40 +283,4 @@ span {
 
 .links a i:hover::after, .download-cv:hover::after {
     transform: scale(1, 1);
-}
-
-.english-level-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.english-level-title {
-    font-size: 1.4rem;
-    font-weight: 700;
-}
-
-.english-level-subtitle {
-    font-size: 1.15rem;
-    margin: 20px 0;
-}
-
-.english-levels-container {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.english-level {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-
-    span {
-        font-size: 1rem;
-    }
 }
