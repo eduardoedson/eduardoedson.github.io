@@ -87,6 +87,15 @@ a {
         transform: none;
         transition: none;
     }
+
+    .brand-dot::after {
+        animation: none;
+        opacity: 0;
+    }
+
+    .magnetic {
+        transition: none;
+    }
 }
 
 /* -------------------------------------------------- */
@@ -133,10 +142,37 @@ a {
 }
 
 .brand-dot {
+    position: relative;
     width: 0.4rem;
     height: 0.4rem;
     border-radius: 50%;
     background: var(--accent);
+}
+
+.brand-dot::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 1px solid var(--accent);
+    animation: pulse-ring 2.4s ease-out infinite;
+}
+
+@keyframes pulse-ring {
+    0% {
+        transform: scale(0.6);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(2.4);
+        opacity: 0;
+    }
+}
+
+/* Elements that follow the cursor with a subtle magnetic pull (see script.js) */
+.magnetic {
+    transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.3, 1);
+    will-change: transform;
 }
 
 .nav-links {
@@ -397,6 +433,7 @@ a {
 }
 
 .edu-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
@@ -404,12 +441,34 @@ a {
     border: 1px solid var(--border);
     border-radius: 1.25rem;
     background: var(--bg-elevated);
+    overflow: hidden;
     transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
 .edu-card:hover {
     border-color: var(--accent);
     transform: translateY(-4px);
+}
+
+/* Soft glow that tracks the cursor position (--mx / --my set via script.js) */
+.edu-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: radial-gradient(480px circle at var(--mx, 50%) var(--my, 50%), var(--accent-soft), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.edu-card:hover::after {
+    opacity: 1;
+}
+
+.edu-card > * {
+    position: relative;
+    z-index: 1;
 }
 
 .edu-icon {
@@ -501,7 +560,21 @@ a {
     gap: 0.5rem;
 }
 
+@keyframes chip-in {
+    from {
+        opacity: 0;
+        transform: translateY(6px) scale(0.94);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
 .chip {
+    position: relative;
+    isolation: isolate;
+    display: inline-block;
     font-size: 0.78rem;
     font-weight: 600;
     letter-spacing: 0.02em;
@@ -510,11 +583,53 @@ a {
     padding: 0.3rem 0.75rem;
     border-radius: 999px;
     background: transparent;
-    transition: border-color 0.25s ease, color 0.25s ease;
+    cursor: default;
+    opacity: 0;
+
+    /* Only color/border/transform react instantly to hover — the pop-in
+       entrance below runs as a separate animation so the two never fight
+       over the same property at the same time. */
+    transition: color 0.3s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+/* Staggered pop-in as the section scrolls into view, timed per chip via
+   --chip-i (set in script.js) */
+.reveal.in-view .chip {
+    animation: chip-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) calc(var(--chip-i, 0) * 45ms) both;
+}
+
+/* Colour wipe that fills in from the left on hover */
+.chip::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
 }
 
 .exp-entry:hover .chip, .project-card:hover .chip {
     border-color: var(--border-strong);
+}
+
+.chip:hover {
+    color: var(--bg);
+    border-color: var(--accent);
+    transform: translateY(-3px) scale(1.05);
+}
+
+.chip:hover::before {
+    transform: scaleX(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .chip {
+        opacity: 1;
+        animation: none;
+    }
 }
 
 /* -------------------------------------------------- */
@@ -547,10 +662,23 @@ a {
     left: 0;
     right: 0;
     height: 4px;
+    z-index: 2;
     background: var(--accent);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.35s ease;
+}
+
+/* Soft glow that tracks the cursor position (--mx / --my set via script.js) */
+.project-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: radial-gradient(480px circle at var(--mx, 50%) var(--my, 50%), var(--accent-soft), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
 }
 
 .project-card:hover {
@@ -561,6 +689,15 @@ a {
 
 .project-card:hover::before {
     transform: scaleX(1);
+}
+
+.project-card:hover::after {
+    opacity: 1;
+}
+
+.project-card > * {
+    position: relative;
+    z-index: 1;
 }
 
 .project-card-head {

@@ -48,11 +48,11 @@
             </nav>
 
             <div class="nav-actions">
-                <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+                <button id="themeToggle" class="theme-toggle magnetic" type="button" aria-label="Toggle color theme">
                     <i class="fa-solid fa-sun icon-sun"></i>
                     <i class="fa-solid fa-moon icon-moon"></i>
                 </button>
-                <a href="./Assets/files/Resume.pdf" target="_blank" class="btn-cv">Resume</a>
+                <a href="./Assets/files/Resume.pdf" target="_blank" class="btn-cv magnetic">Resume</a>
             </div>
         </div>
     </header>
@@ -61,12 +61,12 @@
         <section class="hero">
             <p class="hero-kicker">Fullstack Developer — Web &amp; Mobile</p>
             <h1><span id="my-name"></span><span class="cursor" id="cursor"></span></h1>
-            <p class="hero-tagline">React · Node.js · Python · TypeScript</p>
+            <!-- <p class="hero-tagline">React · Node.js · Python · TypeScript</p>  -->
 
             <div class="hero-actions">
-                <a href="https://www.linkedin.com/in/eduardo-edson-147339136/" target="_blank" class="hero-icon-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/eduardoedson" target="_blank" class="hero-icon-btn" aria-label="GitHub"><i class="fab fa-github-alt"></i></a>
-                <a href="./Assets/files/Resume.pdf" target="_blank" class="hero-cv">Download CV <i class="fa-solid fa-arrow-down"></i></a>
+                <a href="https://www.linkedin.com/in/eduardo-edson-147339136/" target="_blank" class="hero-icon-btn magnetic" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/eduardoedson" target="_blank" class="hero-icon-btn magnetic" aria-label="GitHub"><i class="fab fa-github-alt"></i></a>
+                <a href="./Assets/files/Resume.pdf" target="_blank" class="hero-cv magnetic">Download CV <i class="fa-solid fa-arrow-down"></i></a>
             </div>
         </section>
 
@@ -253,6 +253,62 @@
                 <h2 class="section-title">Projects</h2>
             </div>
             <div class="projects-grid">
+                <article class="project-card" data-href="https://github.com/eduardoedson/Instagram-Downloader" tabindex="0" role="link">
+                    <div class="project-card-head">
+                        <span class="project-title">Instagram Downloader</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square project-link-icon"></i>
+                    </div>
+                    <p class="project-desc">Chrome extension that adds a one-click download button to Instagram posts, reels and stories, saving photos and videos in the highest available quality.</p>
+                    <div class="project-techs">
+                        <span class="chip">TypeScript</span>
+                        <span class="chip">Vite</span>
+                        <span class="chip">Chrome Extension</span>
+                        <span class="chip">Manifest V3</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-href="https://github.com/eduardoedson/Reddit-Downloader" tabindex="0" role="link">
+                    <div class="project-card-head">
+                        <span class="project-title">Reddit Downloader</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square project-link-icon"></i>
+                    </div>
+                    <p class="project-desc">Chrome extension that injects a one-click download button into Reddit posts, saving images and videos straight from the platform's native media hosts.</p>
+                    <div class="project-techs">
+                        <span class="chip">TypeScript</span>
+                        <span class="chip">Vite</span>
+                        <span class="chip">Chrome Extension</span>
+                        <span class="chip">Manifest V3</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-href="https://github.com/eduardoedson/Twitter-X-Downloader" tabindex="0" role="link">
+                    <div class="project-card-head">
+                        <span class="project-title">Twitter / X Downloader</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square project-link-icon"></i>
+                    </div>
+                    <p class="project-desc">Chrome extension that adds a download button to tweets, saving photos, GIFs and videos from X/Twitter at the highest available quality.</p>
+                    <div class="project-techs">
+                        <span class="chip">TypeScript</span>
+                        <span class="chip">Vite</span>
+                        <span class="chip">Chrome Extension</span>
+                        <span class="chip">Manifest V3</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-href="https://github.com/eduardoedson/Discord-Bot-Music" tabindex="0" role="link">
+                    <div class="project-card-head">
+                        <span class="project-title">Discord Music Bot</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square project-link-icon"></i>
+                    </div>
+                    <p class="project-desc">Discord bot that streams music from YouTube with a queue system, rich "now playing" embeds, and auto-disconnect after inactivity.</p>
+                    <div class="project-techs">
+                        <span class="chip">Python</span>
+                        <span class="chip">discord.py</span>
+                        <span class="chip">yt-dlp</span>
+                        <span class="chip">FFmpeg</span>
+                    </div>
+                </article>
+
                 <article class="project-card" data-href="https://github.com/eduardoedson/aotd" tabindex="0" role="link">
                     <div class="project-card-head">
                         <span class="project-title">AOTD :: Anime of The Day</span>
