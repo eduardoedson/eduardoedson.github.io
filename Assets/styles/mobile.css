@@ -1,114 +1,77 @@
-@media (max-width: 600px) {
-    body {
-        max-width: 100%;
-        padding-left: 1.8rem;
-        padding-right: 1.8rem;
+@media (max-width: 900px) {
+    .nav-inner {
+        padding: 0 1.25rem;
     }
 
-    .content-block {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .content-block-left {
-        position: relative;
-        width: 100%;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .content-block-right {
-        width: 100%;
-        gap: 1rem;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    h1 {
-        font-size: 3rem;
-    }
-
-    h2 {
-        font-size: 1.15rem;
-        margin-top: -1.25rem;
-    }
-
-    h3 {
-        font-size: 1.15rem;
-        line-height: 2rem;
-    }
-
-    span {
-        font-size: 0.75rem;
-    }
-    
-    .content-block-description {
-        width: 100%;
-    }
-
-    .content-block-description-bar {
+    .nav-links {
         display: none;
     }
 
-    .description {
+    .nav-actions {
+        gap: 0.6rem;
+    }
+
+    .btn-cv {
+        padding: 0.55rem 1rem;
+        font-size: 0.82rem;
+    }
+
+    .hero {
+        padding: calc(var(--nav-height) + 3rem) 1.25rem 3.5rem;
+    }
+
+    .hero-tagline {
         font-size: 1rem;
-        font-weight: 300;
-        text-align: justify;
-        margin-left: 0;
+        margin: 1rem 0 2rem;
     }
 
-    .content-btns {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 3rem;
+    .section {
+        padding: 3rem 1.25rem;
     }
 
-    .links {
-        position: relative;
-        bottom: 0;
-        gap: 12rem;
-    }
-
-    .links > div {
-        display: flex;
-        flex-direction: row;
+    .section-head {
         gap: 1rem;
+        margin-bottom: 2rem;
     }
 
-    .links a {
-        margin-right: 0;
+    .education-grid {
+        grid-template-columns: 1fr;
     }
 
-    .links a i, .download-cv, .download-cv i {
-        font-size: 1.3rem;
-    }
-    
-    .download-cv {
-        gap: 0.8rem;
-        font-size: 0.75rem;
-        white-space: nowrap;
+    .edu-card {
+        padding: 1.5rem;
     }
 
-    .education-block, .experience-block {
-        display: flex;
+    .exp-entry {
+        padding: 1.75rem 0;
+    }
+
+    .exp-role {
+        font-size: 1.2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 1.5rem;
+    }
+
+    .site-footer {
         flex-direction: column;
-        gap: 0.75rem;
+        gap: 1rem;
+        text-align: center;
+        padding: 2rem 1.25rem 3rem;
     }
+}
 
-    .education-block-title, .experience-block-title, .project-title {
-        font-size: 1rem;
-    }
-
-    .education-block-date, .experience-block-date {
-        font-size: 0.9rem;
-    }
-
-    .education-block-desc, .experience-block-desc, .project-desc {
-        font-size: 1rem;
-    }
-
-    .tech {
+@media (max-width: 480px) {
+    .hero-kicker {
         font-size: 0.75rem;
+    }
+
+    .hero-actions {
+        flex-wrap: wrap;
     }
 }
